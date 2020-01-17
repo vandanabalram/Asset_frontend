@@ -1,0 +1,29 @@
+.register
+{
+    background-color: gainsboro;
+    
+    padding-top: 30px;
+
+}
+.frm
+{
+    padding-left: 10px;
+}
+.btn1
+{
+    height: 35px;
+    background-color: blue;
+    color: white;
+}
+a
+{
+    margin-left: 15px;
+}
+.one
+{
+    width: 75%;
+
+}
+/* p{
+    color: red;
+} */

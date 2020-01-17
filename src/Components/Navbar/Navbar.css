@@ -1,0 +1,12 @@
+.navbar{
+    height:140px;
+    background-color:#686D6D ;
+    /* position: relative; */
+    color:white;
+    
+    }
+.logo{
+    border-radius: 50%;
+    height:90px;
+    width:90px;
+}

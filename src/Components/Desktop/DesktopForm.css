@@ -1,0 +1,12 @@
+.desk{
+    color:red;
+    font-size: 40px;
+    margin-left: 450px;
+    font-style: italic;
+}
+
+.desktoptable{
+    /* background: url('./desk2.jpeg') no-repeat; */
+    background: rgba(147,206,222,1);
+
+}

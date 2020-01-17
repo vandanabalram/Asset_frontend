@@ -1,0 +1,20 @@
+.misimg{
+    background: url('./misimg.jpeg') no-repeat;
+    border:solid 1px cornsilk;
+    background-position: center;
+    background-size: cover;
+    height:  650px;
+    width:1300px;
+    padding: 0;
+}
+.deskbtn{
+    width:649px;
+    color:brown;
+}
+.lapbtn{
+    width:649px;
+    color:brown;
+    
+
+
+}

@@ -1,0 +1,40 @@
+.desktopimg{
+    background: url('./desk1.jpeg') no-repeat;
+    border:solid 1px cornsilk;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 1300px;
+    padding: 0;
+    margin-top: 70px;
+}
+.deskform{
+    margin-left: 40%;
+    margin-top: 10%;
+}
+.name{
+    color: darkred;
+}
+.width{
+    width: 200px;
+    border-top:0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-left: 18px;
+  }
+  .sendbta{
+    margin-right: 100px;
+    height: 40px;
+    border-color: rgb(255, 254, 254);
+    background-color: #ec792c;
+    width: 80px; 
+    margin-top: 50px;
+  }
+  .resetbta{
+    height: 40px;
+    border-color: rgb(255, 254, 254);
+    background-color: #ec792c;
+    width: 80px; 
+    margin-right: 100px;
+    margin-top: 50px;
+  }
