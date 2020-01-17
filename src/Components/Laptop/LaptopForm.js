@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import TableRowlap from './TableRowlap';
 import BrowserHistory from '../Utils/BrowserHistory';
+import { GetUserDetailsById } from '../../Action/Registeraction';
+import { connect } from 'react-redux';
 
-
-
-
-export default class LaptopForm extends Component {
+class LaptopForm extends Component {
 
   constructor(props) {
       super(props);
@@ -27,7 +26,13 @@ export default class LaptopForm extends Component {
         .catch(function (error) {
           console.log(error);
         })
-    }
+        const LoginDetails = (localStorage.getItem('LOGINDETAILS'));
+        debugger;
+        // if (LoginDetails) {
+        const LogDet = JSON.parse(LoginDetails);
+        this.props.GetUserDetailsById(LogDet.userId);
+        // }
+        }
     tabRow(){
       return this.state.Users.map(function(object, i){
           return <TableRowlap obj={object} key={i} />;
@@ -35,10 +40,11 @@ export default class LaptopForm extends Component {
     }
 
     render() {
+      const {UserDetails}= this.props;
       return (
         <div>
           <p>Laptop List</p>
-          <button onClick={this.onHandleClicks} >Create</button>
+          {UserDetails.IsAdmin ?<button onClick={this.onHandleClicks} >Create</button>:""}
           <table className="table table-striped" style={{ marginTop: 20 }}>
             <thead>
               <tr>
@@ -59,3 +65,9 @@ export default class LaptopForm extends Component {
       );
     }
   }
+  const mapStateToProps = (state) => {
+    const { UserDetails } = state.Registerreducer
+    return { UserDetails }
+    }
+    export default connect(mapStateToProps, {GetUserDetailsById})(LaptopForm);
+  

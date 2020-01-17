@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { connect } from 'react-redux';
+import { GetUserDetailsById } from '../../Action/Registeraction';
+
+
 
 class TableRowlap extends Component {
   constructor(props) {
@@ -13,7 +17,17 @@ delete() {
         .catch(err => console.log(err))
         window.location.reload();
 }
+componentDidMount() {
+  const LoginDetails = (localStorage.getItem('LOGINDETAILS'));
+  debugger;
+  // if (LoginDetails) {
+  const LogDet = JSON.parse(LoginDetails);
+  this.props.GetUserDetailsById(LogDet.userId);
+  // }
+  }
+
   render() {
+    const {UserDetails}= this.props;
     return (
         <tr>
           <td>
@@ -35,14 +49,18 @@ delete() {
             {this.props.obj.Comment}
           </td>
           <td>
-            <button className="btn btn-primary">Edit</button>
+          {UserDetails.IsAdmin ?<button className="btn btn-primary">Edit</button>:""}
           </td>
           <td>
-            <button onClick={this.delete} className="btn btn-danger">Delete</button>
+          {UserDetails.IsAdmin ?<button onClick={this.delete} className="btn btn-danger">Delete</button>:""}
           </td>
         </tr>
     );
   }
 }
 
-export default TableRowlap;
+const mapStateToProps = (state) => {
+  const { UserDetails } = state.Registerreducer
+  return { UserDetails }
+  }
+  export default connect(mapStateToProps, {GetUserDetailsById})(TableRowlap);

@@ -25,12 +25,7 @@ class Dashboardpage extends Component {
      BrowserHistory.push('/miscellaneousindex'); 
                     
          }    
-         onHandleClickfour = (e) => {
-
-            BrowserHistory.push('/homepage'); 
-                           
-                }    
-            
+        
     render() {
         return (
             <div>
@@ -53,7 +48,7 @@ class Dashboardpage extends Component {
                 <button onClick={this.onHandleClickthree}> Miscellaneous</button>
                 </div>
                 <div className="col-xs-1 col-sm-1 col-md-2 col-lg-1" style={{color:'white'}} >
-                <button onClick={this.onHandleClickfour} > Logout</button>
+                <button  onClick={this.Logout} > Logout</button>
                 </div>    
       </div> 
       <div>

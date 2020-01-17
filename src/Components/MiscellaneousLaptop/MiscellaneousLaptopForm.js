@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import TableRowMisLap from './TableRowMisLap';
 import BrowserHistory from '../Utils/BrowserHistory';
+import { GetUserDetailsById } from '../../Action/Registeraction';
+import { connect } from 'react-redux';
 
-export default class MiscellaneousLaptopForm extends Component {
+ class MiscellaneousLaptopForm extends Component {
   constructor(props) {
     super(props);
     this.state = { Users: [] };
@@ -23,7 +25,13 @@ export default class MiscellaneousLaptopForm extends Component {
       .catch(function (error) {
         console.log(error);
       })
-  }
+      const LoginDetails = (localStorage.getItem('LOGINDETAILS'));
+      debugger;
+      // if (LoginDetails) {
+      const LogDet = JSON.parse(LoginDetails);
+      this.props.GetUserDetailsById(LogDet.userId);
+      // }
+      }
   tabRow() {
     return this.state.Users.map(function (object, i) {
       return <TableRowMisLap obj={object} key={i} />;
@@ -31,10 +39,12 @@ export default class MiscellaneousLaptopForm extends Component {
   }
 
   render() {
+    const {UserDetails}= this.props;
+
     return (
       <div className="desktoptable">
         <p className="desk">MiscellaneousLaptop List</p>
-        <button  onClick={this.onHandleClicks}>Create</button>
+        {UserDetails.IsAdmin ?<button  onClick={this.onHandleClicks}>Create</button>:""}
         <table className="table table-striped" style={{ marginTop: 60 }}>
           <thead>
             <tr>
@@ -55,3 +65,8 @@ export default class MiscellaneousLaptopForm extends Component {
     );
   }
 }
+const mapStateToProps = (state) => {
+  const { UserDetails } = state.Registerreducer
+  return { UserDetails }
+  }
+  export default connect(mapStateToProps, {GetUserDetailsById})(MiscellaneousLaptopForm);
