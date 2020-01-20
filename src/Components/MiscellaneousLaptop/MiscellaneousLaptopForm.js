@@ -5,33 +5,29 @@ import BrowserHistory from '../Utils/BrowserHistory';
 import { GetUserDetailsById } from '../../Action/Registeraction';
 import { connect } from 'react-redux';
 
- class MiscellaneousLaptopForm extends Component {
+class MiscellaneousLaptopForm extends Component {
   constructor(props) {
     super(props);
     this.state = { Users: [] };
   }
   onHandleClicks = (e) => {
 
-    BrowserHistory.push('/miscellaneouslaptoptable'); 
-        
-        }
+    BrowserHistory.push('/miscellaneouslaptoptable');
+
+  }
   componentDidMount() {
-    debugger;
+
     axios.get('http://localhost:3001/MiscellaneousLaptop')
       .then(response => {
-        debugger
         this.setState({ Users: response.data });
       })
       .catch(function (error) {
         console.log(error);
       })
-      const LoginDetails = (localStorage.getItem('LOGINDETAILS'));
-      debugger;
-      // if (LoginDetails) {
-      const LogDet = JSON.parse(LoginDetails);
-      this.props.GetUserDetailsById(LogDet.userId);
-      // }
-      }
+    const LoginDetails = (localStorage.getItem('LOGINDETAILS'));
+    const LogDet = JSON.parse(LoginDetails);
+    this.props.GetUserDetailsById(LogDet.userId);
+  }
   tabRow() {
     return this.state.Users.map(function (object, i) {
       return <TableRowMisLap obj={object} key={i} />;
@@ -39,22 +35,21 @@ import { connect } from 'react-redux';
   }
 
   render() {
-    const {UserDetails}= this.props;
+    const { UserDetails } = this.props;
 
     return (
       <div className="desktoptable">
         <p className="desk">MiscellaneousLaptop List</p>
-        {UserDetails.IsAdmin ?<button  onClick={this.onHandleClicks}>Create</button>:""}
+        {UserDetails.IsAdmin ? <button onClick={this.onHandleClicks}>Create</button> : ""}
         <table className="table table-striped" style={{ marginTop: 60 }}>
           <thead>
             <tr>
-              
               <th>Asset_Number</th>
-             
               <th>MAC_Address</th>
               <th>ChargerAsset_Number</th>
+              <th>Comment</th>
               <th colSpan="2">Action</th>
-              
+
             </tr>
           </thead>
           <tbody>
@@ -68,5 +63,5 @@ import { connect } from 'react-redux';
 const mapStateToProps = (state) => {
   const { UserDetails } = state.Registerreducer
   return { UserDetails }
-  }
-  export default connect(mapStateToProps, {GetUserDetailsById})(MiscellaneousLaptopForm);
+}
+export default connect(mapStateToProps, { GetUserDetailsById })(MiscellaneousLaptopForm);

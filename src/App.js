@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import HomePage from './Components/HomePage/HomePage';
 import RegisterPage from './Components/RegisterPage/RegisterPage';
 import './App.css';
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 import Dashboardpage from './Components/DashboardPage/DashboardPage';
 import LoginPage from './Components/LoginPage/LoginPage';
 import Navbar from './Components/Navbar/Navbar';
@@ -17,7 +17,16 @@ import MiscellaneousDesktopForm from './Components/MiscellaneousDesktop/Miscella
 import MiscellaneousLaptopTable from './Components/MiscellaneousLaptop/MiscellaneousLaptopTable';
 import MiscellaneousLaptopForm from './Components/MiscellaneousLaptop/MiscellaneousLaptopForm';
 
-
+const PrivateRoute = ({ component: IncomingComponent, ...rest }) => (
+  <Route
+  {...rest}
+  render={props => ( 
+  (localStorage.getItem('LOGINDETAILS')) ? (<IncomingComponent {...props} />) : ( 
+  <Redirect to={{pathname: '/', state: { from: props.location }, }} />)
+  )
+  }
+  />
+  );
 
 export default class App extends Component {
   render() {
@@ -25,29 +34,27 @@ export default class App extends Component {
       <Router>
         <switch>
           <Route exact path='/' component={HomePage}></Route>
-          <Route exact path='/homepage' component={HomePage}></Route>
-
           <Route exact path='/login' component={LoginPage}></Route>
           <Route exact path='/register' component={RegisterPage}></Route>
-          <Route exact path='/dashboard' component={Dashboardpage}></Route>
-          <Route exact path='/navbar' component={Navbar}></Route>
-          <Route exact path='/footer' component={Footer}></Route>
-          <Route exact path='/desktoptable' component={DesktopTable}></Route>
-          <Route exact path='/desktopform' component={DesktopForm}></Route>
-          <Route exact path='/laptoptable' component={LaptopTable}></Route>
-          <Route exact path='/laptopform' component={LaptopForm}></Route>
-          <Route exact path='/miscellaneousindex' component={Miscellaneousindex}></Route>
-          <Route exact path='/miscellaneousdesktoptable' component={MiscellaneousDesktopTable}></Route>
-          <Route exact path='/miscellaneousdesktopform' component={MiscellaneousDesktopForm}></Route>
-          <Route exact path='/miscellaneouslaptoptable' component={MiscellaneousLaptopTable}></Route>
-          <Route exact path='/miscellaneouslaptopform' component={MiscellaneousLaptopForm}></Route>
-          
-        
+          <PrivateRoute exact path='/dashboard' component={Dashboardpage}></PrivateRoute>
+          <PrivateRoute exact path='/navbar' component={Navbar}></PrivateRoute>
+          <PrivateRoute exact path='/footer' component={Footer}></PrivateRoute>
+          <PrivateRoute exact path='/desktoptable' component={DesktopTable}></PrivateRoute>
+          <PrivateRoute exact path='/desktopform' component={DesktopForm}></PrivateRoute>
+          <PrivateRoute exact path='/laptoptable' component={LaptopTable}></PrivateRoute>
+          <PrivateRoute exact path='/laptopform' component={LaptopForm}></PrivateRoute>
+          <PrivateRoute exact path='/miscellaneousindex' component={Miscellaneousindex}></PrivateRoute>
+          <PrivateRoute exact path='/miscellaneousdesktoptable' component={MiscellaneousDesktopTable}></PrivateRoute>
+          <PrivateRoute exact path='/miscellaneousdesktopform' component={MiscellaneousDesktopForm}></PrivateRoute>
+          <PrivateRoute exact path='/miscellaneouslaptoptable' component={MiscellaneousLaptopTable}></PrivateRoute>
+          <PrivateRoute exact path='/miscellaneouslaptopform' component={MiscellaneousLaptopForm}></PrivateRoute>
+
+
         </switch>
       </Router>
-    
+
     </div>
 
   }
-} 
+}
 

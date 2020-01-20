@@ -17,10 +17,7 @@ class Footer extends Component {
               <span><a class="icon" href="#"><SocialIcon url="http://linkedin.com/jaketrent" /></a></span>
             </div>
           </div>
-
-
         </footer>
-
       </div>
     );
   }

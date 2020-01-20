@@ -5,17 +5,15 @@ import Footer from '../Footer/Footer';
 import "./HomePage.css";
 
 class HomePage extends Component {
-    render() {
-        return (
-            <div>
-            <div><Navbar/></div>
-            <img src={logo} className="home" ></img>
-            <div><Footer/></div>
-
-                
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div>
+        <div><Navbar /></div>
+        <img src={logo} className="home" ></img>
+        <div><Footer /></div>
+      </div>
+    );
+  }
 }
 
 export default HomePage;

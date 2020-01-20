@@ -8,11 +8,11 @@ import Laptopreducer from './Laptopreducer'
 import { combineReducers } from 'redux';
 
 export default combineReducers({
-    Registerreducer,
-    Loginreducer,
-    Desktopreducer,
-    Laptopreducer,
-    MiscellaneousDesktopreducer,
-    MisLapreducer
-  
+  Registerreducer,
+  Loginreducer,
+  Desktopreducer,
+  Laptopreducer,
+  MiscellaneousDesktopreducer,
+  MisLapreducer
+
 })
