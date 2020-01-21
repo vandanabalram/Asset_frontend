@@ -39,8 +39,8 @@ export default class App extends Component {
           <PrivateRoute exact path='/dashboard' component={Dashboardpage}></PrivateRoute>
           <PrivateRoute exact path='/navbar' component={Navbar}></PrivateRoute>
           <PrivateRoute exact path='/footer' component={Footer}></PrivateRoute>
-          <PrivateRoute exact path='/desktoptable' component={DesktopTable}></PrivateRoute>
-          <PrivateRoute exact path='/desktopform' component={DesktopForm}></PrivateRoute>
+          <Route exact path='/desktoptable' component={DesktopTable}></Route>
+          <Route exact path='/desktopform' component={DesktopForm}></Route>
           <PrivateRoute exact path='/laptoptable' component={LaptopTable}></PrivateRoute>
           <PrivateRoute exact path='/laptopform' component={LaptopForm}></PrivateRoute>
           <PrivateRoute exact path='/miscellaneousindex' component={Miscellaneousindex}></PrivateRoute>

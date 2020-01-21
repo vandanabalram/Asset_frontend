@@ -136,3 +136,6 @@ const mapStateToProps = (state) => {
   return { Employee_Id, Asset_Number, Name, MAC_Address, Comment }
 }
 export default connect(mapStateToProps, { questionHandle })(DesktopTable);
+
+
+
