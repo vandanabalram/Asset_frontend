@@ -5,6 +5,7 @@ import './DesktopForm.css';
 import BrowserHistory from '../Utils/BrowserHistory'
 import { GetUserDetailsById } from '../../Action/Registeraction';
 import { connect } from 'react-redux';
+import DpNavbar from '../DpNavbar/DpNavbar';
 
 class DesktopForm extends Component {
   constructor(props) {
@@ -40,6 +41,7 @@ class DesktopForm extends Component {
     const { UserDetails } = this.props;
     return (
       <div className="desktoptable">
+        <DpNavbar/>
         <p className="desk">Desktop List</p>
         {UserDetails.IsAdmin ? <button onClick={this.onHandleClicks} >Create</button> : ""}
 

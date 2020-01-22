@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import BrowserHistory from '../Utils/BrowserHistory'
 import { loginHandle } from '../../Action/Loginaction';
+import './LoginPage.css';
 class LoginPage extends Component {
   constructor(props) {
     super(props);
@@ -57,7 +58,7 @@ class LoginPage extends Component {
 
   render() {
     return (
-      <div className="register">
+      <div className="login">
         <div class="container">
           <div class="row">
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>

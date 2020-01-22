@@ -4,6 +4,7 @@ import TableRowlap from './TableRowlap';
 import BrowserHistory from '../Utils/BrowserHistory';
 import { GetUserDetailsById } from '../../Action/Registeraction';
 import { connect } from 'react-redux';
+import DpNavbar from '../DpNavbar/DpNavbar';
 
 class LaptopForm extends Component {
   constructor(props) {
@@ -37,6 +38,7 @@ class LaptopForm extends Component {
     const { UserDetails } = this.props;
     return (
       <div>
+        <DpNavbar/>
         <p>Laptop List</p>
         {UserDetails.IsAdmin ? <button onClick={this.onHandleClicks} >Create</button> : ""}
         <table className="table table-striped" style={{ marginTop: 20 }}>

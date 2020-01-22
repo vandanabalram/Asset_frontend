@@ -4,6 +4,7 @@ import TableRowMisdesk from './TableRowMisdesk';
 import BrowserHistory from '../Utils/BrowserHistory';
 import { GetUserDetailsById } from '../../Action/Registeraction';
 import { connect } from 'react-redux';
+import DpNavbar from '../DpNavbar/DpNavbar';
 
 class MiscellaneousDesktopForm extends Component {
   constructor(props) {
@@ -25,11 +26,8 @@ class MiscellaneousDesktopForm extends Component {
         console.log(error);
       })
     const LoginDetails = (localStorage.getItem('LOGINDETAILS'));
-
-
     const LogDet = JSON.parse(LoginDetails);
     this.props.GetUserDetailsById(LogDet.userId);
-
   }
 
   tabRow() {
@@ -43,6 +41,7 @@ class MiscellaneousDesktopForm extends Component {
 
     return (
       <div className="desktoptable">
+        <DpNavbar/>
         <p className="desk">MiscellaneousDesktop List</p>
         {UserDetails.IsAdmin ? <button onClick={this.onHandleClicks}>Create</button> : ""}
         <table className="table table-striped" style={{ marginTop: 60 }}>

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import "./Navbar.css";
-import logo from './images1.jpg';
-import Modal from 'react-modal';
+import logo from './van2.png';
 import RegisterPage from '../RegisterPage/RegisterPage'
 import LoginPage from '../LoginPage/LoginPage';
 import '../Utils/BrowserHistory';
@@ -25,10 +24,10 @@ class Navbar extends Component {
           </div>
 
           <div className="col-xs-1 col-sm-1 col-md-2 col-lg-1" style={{ color: 'white' }}>
-            <button onClick={this.onHandleClick}> Register</button>
+            <button className="regbtn" onClick={this.onHandleClick}> Register</button>
           </div>
           <div className="col-xs-1 col-sm-1 col-md-2 col-lg-1" style={{ color: 'white' }} >
-            <button onClick={this.onHandleClicks}> Signin</button>
+            <button className="regbtn" onClick={this.onHandleClicks}> Signin</button>
           </div>
         </div>
 

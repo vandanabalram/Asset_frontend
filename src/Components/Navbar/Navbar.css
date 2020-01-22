@@ -1,12 +1,16 @@
 .navbar{
-    height:140px;
-    background-color:#686D6D ;
-    /* position: relative; */
-    color:white;
+    height:80px;
+    background:#65818c;
+    width: 1315px;
+
     
     }
 .logo{
     border-radius: 50%;
-    height:90px;
-    width:90px;
+    height:70px;
+    width:70px;
+}
+
+.regbtn{
+    background-color:#788472;
 }

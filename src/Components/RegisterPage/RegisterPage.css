@@ -1,7 +1,6 @@
 .register
 {
-    background-color: gainsboro;
-    
+    background: #3C3B3F;
     padding-top: 30px;
 
 }
@@ -12,7 +11,7 @@
 .btn1
 {
     height: 35px;
-    background-color: blue;
+    background-color:violet;
     color: white;
 }
 a
@@ -24,6 +23,3 @@ a
     width: 75%;
 
 }
-/* p{
-    color: red;
-} */

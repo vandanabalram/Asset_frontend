@@ -15,15 +15,16 @@ class TableRow extends Component {
     this.state = {
       isExpanded: false,
       modalIsOpen: false,
-      Employee_Id:'',
-      Asset_Number:'',
-      Name:'',
-      MAC_Address:'',
-      Comment:''
-    
-		};
+      Employee_Id: '',
+      Asset_Number: '',
+      Name: '',
+      MAC_Address: '',
+      Comment: '',
+      _id:'',
+
+    };
     this.delete = this.delete.bind(this);
-    
+
   }
   handleChangeg = (e) => {
     this.setState({ [e.target.name]: e.target.value });
@@ -66,23 +67,22 @@ class TableRow extends Component {
       .catch(err => console.log(err))
     window.location.reload();
   }
-  openModal=()=> {
-    console.log(this.props.obj)
-    this.setState({Employee_Id:this.props.Employee_Id})
-    this.setState({Asset_Number:this.props.Asset_Number})
-    this.setState({Name:this.props.Name})
-    this.setState({MAC_Address:this.props.MAC_Address})
-    this.setState({Comment:this.props.Comment})
-    this.setState({_id:this.props._id})
+  openModal = () => {
+    console.log(this.props.obj._id)
+    this.setState({ Employee_Id: this.props.obj.Employee_Id })
+    this.setState({ Asset_Number: this.props.obj.Asset_Number })
+    this.setState({ Name: this.props.obj.Name })
+    this.setState({ MAC_Address: this.props.obj.MAC_Address })
+    this.setState({ Comment: this.props.obj.Comment })
+    this.setState({ _id: this.props.obj._id })
 
-    this.setState({modalIsOpen: true});
-    console.log("hi",this.state)
-    }
+    this.setState({ modalIsOpen: true });
+    console.log("hi", this.state)
+  }
 
-  closeModal=()=> {
-      this.setState({modalIsOpen: false});
-      }
-
+  closeModal = () => {
+    this.setState({ modalIsOpen: false });
+  }
 
 
   componentDidMount() {
@@ -97,26 +97,26 @@ class TableRow extends Component {
 
   onSubmit = (e) => {
     e.preventDefault();
-    console.log(this.props._id)
+    console.log("hi",this.state._id)
     const payload = {
-      _id:this.props._id,
+      _id: this.state._id,
       Employee_Id: this.state.Employee_Id,
       Asset_Number: this.state.Asset_Number,
       Name: this.state.Name,
       MAC_Address: this.state.MAC_Address,
       Comment: this.state.Comment,
     };
-
+console.log(payload);
     this.props.updateHandle(payload);
-    // BrowserHistory.push('./desktopform');
+    BrowserHistory.push('./desktopform');
   }
   onHandleClicksCancel() {
-    BrowserHistory.push('/desktoptable');
+    BrowserHistory.push('/desktopform');
   }
 
   render() {
     const { UserDetails } = this.props;
-    
+
     return (
       <tr>
         <td>
@@ -140,56 +140,56 @@ class TableRow extends Component {
             isOpen={this.state.modalIsOpen}
             onRequestClose={this.closeModal}
             contentLabel="Register Modal"
-            >
-              <form onSubmit={this.onSubmit} className="deskform">
-            <div>
-              <label className="name">Employee_Id:</label>
-              <input
-                type="text"
-                className="width"
-                defaultValue={this.props.obj.Employee_Id}
-                onChange={this.onChangeEmployee_Id}
-              />
-            </div>
-            <div>
-              <label className="name">Asset_Number: </label>
-              <input type="text"
-                className="width"
-                defaultValue={this.props.obj.Asset_Number}
-                onChange={this.onChangeAsset_Number}
-              />
-            </div>
-            <div>
-              <label className="name">Name: </label>
-              <input type="text"
-                className="width"
-                defaultValue={this.props.obj.Name}
-                onChange={this.onChangeName}
-              />
-            </div>
-            <div>
-              <label className="name"> MAC_Address:</label>
-              <input type="text"
-                className="width"
-                defaultValue={this.props.obj.MAC_Address}
-                onChange={this.onChangeMAC_Address}
-              />
-            </div>
-            <div>
-              <label className="name"> Comment:</label>
-              <input type="text"
-                className="width"
-                
-                defaultValue={this.props.obj.Comment}
-                onChange={this.onChangeComment}
-              />
-            </div>
-            <div className="form-group">
-              <button type="submit" value="send" className="sendbta" onClick={this.onSubmit}>Send</button>
-              <button onClick={this.onHandleClicksCancel} type="button" className="resetbta">Cancel</button>
-            </div>
-          </form>
-            
+          >
+            <form onSubmit={this.onSubmit} className="deskform">
+              <div>
+                <label className="name">Employee_Id:</label>
+                <input
+                  type="text"
+                  className="width"
+                  defaultValue={this.props.obj.Employee_Id}
+                  onChange={this.onChangeEmployee_Id}
+                />
+              </div>
+              <div>
+                <label className="name">Asset_Number: </label>
+                <input type="text"
+                  className="width"
+                  defaultValue={this.props.obj.Asset_Number}
+                  onChange={this.onChangeAsset_Number}
+                />
+              </div>
+              <div>
+                <label className="name">Name: </label>
+                <input type="text"
+                  className="width"
+                  defaultValue={this.props.obj.Name}
+                  onChange={this.onChangeName}
+                />
+              </div>
+              <div>
+                <label className="name"> MAC_Address:</label>
+                <input type="text"
+                  className="width"
+                  defaultValue={this.props.obj.MAC_Address}
+                  onChange={this.onChangeMAC_Address}
+                />
+              </div>
+              <div>
+                <label className="name"> Comment:</label>
+                <input type="text"
+                  className="width"
+
+                  defaultValue={this.props.obj.Comment}
+                  onChange={this.onChangeComment}
+                />
+              </div>
+              <div className="form-group">
+                <button type="submit" value="send" className="sendbta" onClick={this.onSubmit}>Update</button>
+                <button onClick={this.onHandleClicksCancel} type="button" className="resetbta">Cancel</button>
+              </div>
+            </form>
+
           </Modal>
         </td>
         <td>
@@ -205,4 +205,4 @@ const mapStateToProps = (state) => {
   const { UserDetails } = state.Registerreducer
   return { UserDetails }
 }
-export default connect(mapStateToProps, { GetUserDetailsById,updateHandle})(TableRow);
+export default connect(mapStateToProps, { GetUserDetailsById, updateHandle })(TableRow);

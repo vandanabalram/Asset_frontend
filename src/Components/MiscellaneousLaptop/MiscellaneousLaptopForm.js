@@ -4,6 +4,7 @@ import TableRowMisLap from './TableRowMisLap';
 import BrowserHistory from '../Utils/BrowserHistory';
 import { GetUserDetailsById } from '../../Action/Registeraction';
 import { connect } from 'react-redux';
+import DpNavbar from '../DpNavbar/DpNavbar';
 
 class MiscellaneousLaptopForm extends Component {
   constructor(props) {
@@ -39,6 +40,7 @@ class MiscellaneousLaptopForm extends Component {
 
     return (
       <div className="desktoptable">
+        <DpNavbar/>
         <p className="desk">MiscellaneousLaptop List</p>
         {UserDetails.IsAdmin ? <button onClick={this.onHandleClicks}>Create</button> : ""}
         <table className="table table-striped" style={{ marginTop: 60 }}>

@@ -16,6 +16,7 @@ import MiscellaneousDesktopTable from './Components/MiscellaneousDesktop/Miscell
 import MiscellaneousDesktopForm from './Components/MiscellaneousDesktop/MiscellaneousDesktopForm';
 import MiscellaneousLaptopTable from './Components/MiscellaneousLaptop/MiscellaneousLaptopTable';
 import MiscellaneousLaptopForm from './Components/MiscellaneousLaptop/MiscellaneousLaptopForm';
+import DpNavbar from './Components/DpNavbar/DpNavbar';
 
 const PrivateRoute = ({ component: IncomingComponent, ...rest }) => (
   <Route
@@ -34,6 +35,8 @@ export default class App extends Component {
       <Router>
         <switch>
           <Route exact path='/' component={HomePage}></Route>
+          <Route exact path='/dpnavbar' component={DpNavbar}></Route>
+
           <Route exact path='/login' component={LoginPage}></Route>
           <Route exact path='/register' component={RegisterPage}></Route>
           <PrivateRoute exact path='/dashboard' component={Dashboardpage}></PrivateRoute>
@@ -41,13 +44,13 @@ export default class App extends Component {
           <PrivateRoute exact path='/footer' component={Footer}></PrivateRoute>
           <Route exact path='/desktoptable' component={DesktopTable}></Route>
           <Route exact path='/desktopform' component={DesktopForm}></Route>
-          <PrivateRoute exact path='/laptoptable' component={LaptopTable}></PrivateRoute>
-          <PrivateRoute exact path='/laptopform' component={LaptopForm}></PrivateRoute>
+          <Route exact path='/laptoptable' component={LaptopTable}></Route>
+          <Route exact path='/laptopform' component={LaptopForm}></Route>
           <PrivateRoute exact path='/miscellaneousindex' component={Miscellaneousindex}></PrivateRoute>
-          <PrivateRoute exact path='/miscellaneousdesktoptable' component={MiscellaneousDesktopTable}></PrivateRoute>
-          <PrivateRoute exact path='/miscellaneousdesktopform' component={MiscellaneousDesktopForm}></PrivateRoute>
-          <PrivateRoute exact path='/miscellaneouslaptoptable' component={MiscellaneousLaptopTable}></PrivateRoute>
-          <PrivateRoute exact path='/miscellaneouslaptopform' component={MiscellaneousLaptopForm}></PrivateRoute>
+          <Route exact path='/miscellaneousdesktoptable' component={MiscellaneousDesktopTable}></Route>
+          <Route exact path='/miscellaneousdesktopform' component={MiscellaneousDesktopForm}></Route>
+          <Route exact path='/miscellaneouslaptoptable' component={MiscellaneousLaptopTable}></Route>
+          <Route exact path='/miscellaneouslaptopform' component={MiscellaneousLaptopForm}></Route>
 
 
         </switch>

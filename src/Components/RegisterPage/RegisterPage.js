@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import BrowserHistory from '../Utils/BrowserHistory'
 import { registerHandle } from '../../Action/Registeraction';
+import './RegisterPage.css';
 
 class RegisterPage extends Component {
   constructor(props) {
