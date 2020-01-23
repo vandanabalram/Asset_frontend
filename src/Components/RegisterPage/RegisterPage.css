@@ -1,25 +1,52 @@
-.register
-{
-    background: #3C3B3F;
-    padding-top: 30px;
+.regimg{
+    width: 100%;
+    height: 100%;
+}
+.error{
+    color: brown;
+}
+.label{
+    color: #293a21;
+}
+.regbtn{
+    background-color: lightseagreen;
+    color: rgb(33, 15, 136);
+}
+.signup{
+    color: brown;
+    margin-left: 50px;
+}
+.already{
+    color: #293a21;
 
 }
-.frm
-{
-    padding-left: 10px;
+#acct{
+    color: red;
 }
-.btn1
-{
-    height: 35px;
-    background-color:violet;
-    color: white;
+#cnl{
+    color: blue;
+    margin-left: 40px;
 }
-a
-{
-    margin-left: 15px;
+.container{
+    /* background: url('./images1.jpeg') no-repeat ; */
+    width:1000px;
+    height: 1000px;
 }
-.one
-{
-    width: 75%;
-
-}
+.input_box {
+    margin: 2px;
+   
+   color: white;
+     width: 100%;
+     margin-bottom: 10px;
+     height: 40px;
+     font-weight: bold;
+     background-color: #53a7ea;
+     font-family: sans-serif;
+ } 
+ .input_box:hover{
+     -webkit-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+     transform: scale(1.1);
+     background-color:rgb(190, 196, 192);
+     color:black;
+ }

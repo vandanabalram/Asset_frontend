@@ -23,10 +23,10 @@ class Navbar extends Component {
           <div className="col-xs-7 col-sm-7 col-md-7 col-lg-7" >
           </div>
 
-          <div className="col-xs-1 col-sm-1 col-md-2 col-lg-1" style={{ color: 'white' }}>
+          <div className="col-xs-1 col-sm-1 col-md-2 col-lg-1" >
             <button className="regbtn" onClick={this.onHandleClick}> Register</button>
           </div>
-          <div className="col-xs-1 col-sm-1 col-md-2 col-lg-1" style={{ color: 'white' }} >
+          <div className="col-xs-1 col-sm-1 col-md-2 col-lg-1"  >
             <button className="regbtn" onClick={this.onHandleClicks}> Signin</button>
           </div>
         </div>

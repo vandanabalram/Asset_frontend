@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './images.jpeg';
+import logo from './home2.jpg';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import "./HomePage.css";

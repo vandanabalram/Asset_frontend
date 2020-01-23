@@ -2,3 +2,41 @@
     background: rgba(147,206,222,1);
     height:640px;
 }
+.lgbtn{
+    background-color: lightseagreen;
+    color: brown;
+    border-radius: 50px;
+    height: 44px;
+    width: 100px;
+    border: 2px solid white;
+}
+.lgbtn:hover{
+   background-color: darkslategray;
+   color: white;
+}
+.input_box {
+    margin: 2px;
+   
+   color: white;
+     width: 100%;
+     margin-bottom: 10px;
+     height: 40px;
+     font-weight: bold;
+     background-color: #53a7ea;
+     font-family: sans-serif;
+ } 
+ .input_box:hover{
+     -webkit-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+     transform: scale(1.1);
+     background-color:rgb(190, 196, 192);
+     color:black;
+ }
+ #cn{
+     margin-left: 30px;
+     color: blue;
+ }
+ #ww{
+     margin-left: 55px;
+     color:brown;
+ }

@@ -115,10 +115,10 @@ class TableRowMisdesk extends Component {
     };
     console.log(payload);
     this.props.updateHandle(payload);
-    BrowserHistory.push('./miscellaneouslaptopform');
+    BrowserHistory.push('./miscellaneousdesktopform');
   }
   onHandleClicksCancel() {
-    BrowserHistory.push('./miscellaneouslaptopform');
+    BrowserHistory.push('./miscellaneousdesktopform');
   }
 
 
@@ -146,7 +146,7 @@ class TableRowMisdesk extends Component {
 
 
         <td>
-          {UserDetails.IsAdmin ? <button className="btn btn-primary">Edit</button> : ""}
+          {UserDetails.IsAdmin ? <button onClick={this.openModal} className="btn btn-primary">Edit</button> : ""}
           <Modal className="modelbody"
             isOpen={this.state.modalIsOpen}
             onRequestClose={this.closeModal}
@@ -182,6 +182,7 @@ class TableRowMisdesk extends Component {
             <div className="form-check">
               <label className="form-check-label">
                 <input type="checkbox"
+                defaultValue={this.props.obj.Mouse}
                   onChange={this.toggleClickMouse}
                   className="form-check-input"
                 />
@@ -191,6 +192,7 @@ class TableRowMisdesk extends Component {
             <div className="form-check">
               <label className="form-check-label">
                 <input type="checkbox"
+                  defaultValue={this.props.obj.Keyboard}
                   onChange={this.toggleClickKeyboard}
                   className="form-check-input"
                 />
@@ -200,6 +202,7 @@ class TableRowMisdesk extends Component {
             <div className="form-check">
               <label className="form-check-label">
                 <input type="checkbox"
+                  defaultValue={this.props.obj.Cables}
                   onChange={this.toggleClickCables}
                   className="form-check-input"
                 />
@@ -211,6 +214,7 @@ class TableRowMisdesk extends Component {
               <label className="name">Comment:</label>
               <input type="text"
                 className="width"
+                defaultValue={this.props.obj.Comment}
                 onChange={this.Comment}
               />
             </div>

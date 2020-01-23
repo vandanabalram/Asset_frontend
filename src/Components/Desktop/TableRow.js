@@ -179,7 +179,6 @@ console.log(payload);
                 <label className="name"> Comment:</label>
                 <input type="text"
                   className="width"
-
                   defaultValue={this.props.obj.Comment}
                   onChange={this.onChangeComment}
                 />

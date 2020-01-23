@@ -4,6 +4,7 @@ import BrowserHistory from '../Utils/BrowserHistory'
 import { registerHandle } from '../../Action/Registeraction';
 import './RegisterPage.css';
 
+
 class RegisterPage extends Component {
   constructor(props) {
     super(props);
@@ -24,6 +25,7 @@ class RegisterPage extends Component {
 
     };
   }
+
   onHandleChange = (event) => {
     this.setState({ [event.target.name]: event.target.value });
 
@@ -97,48 +99,49 @@ class RegisterPage extends Component {
     else if (!this.state.Mobnum.match(/^[0-9]{10}$/)) {
       this.setState({ phnerr: "Please enter the valid number" })
     }
+    else
     this.props.registerHandle(payload);
   }
 
 
   render() {
     return (
-      <div className="register">
         <div class="container">
           <div class="row">
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4 frm">
-              <h1>Signup</h1>
+             <div className="signup"><h1 className="signup"><b>SIGN UP</b> </h1>
               <div className="regcont">
-                <div><label ><b>First Name</b></label><br /></div>
-                <div><input type="text" name="Firstname" className="one" onChange={this.onHandleChange} /><br /></div>
-                <div><p >{this.state.ferr}</p></div>
-                <div><label><b>Last Name</b></label><br /></div>
-                <div><input type="text" name="Lastname" className="one" onChange={this.onHandleChange} /><br /></div>
-                <div> <p >{this.state.lerr}</p></div>
+                <div><label className="label"><b>First Name</b></label><br /></div>
+                <div><input placeholder="First Name" type="text" name="Firstname" className="input_box" onChange={this.onHandleChange} /><br /></div>
+                <div><p className="error" >{this.state.ferr}</p></div>
+                <div><label className="label"><b>Last Name</b></label><br /></div>
+                <div><input placeholder="Last Name"  type="text" name="Lastname" className="input_box" onChange={this.onHandleChange} /><br /></div>
+                <div> <p className="error">{this.state.lerr}</p></div>
 
-                <div><label ><b>Email</b></label><br /></div>
-                <div> <input type="text" name="email" className="one" onChange={this.onHandleChange} /><br /></div>
-                <div> <p >{this.state.uerr}</p></div>
-                <div><label ><b>Password</b></label><br /></div>
-                <div> <input type="password" name="password" className="one" onChange={this.onHandleChange} /><br /><br /></div>
-                <div> <p >{this.state.perr}</p></div>
-                <div> <label ><b>Confirmpassword</b></label><br /></div>
-                <div> <input type="password" name="Confirmpassword" className="one" onChange={this.onHandleChange} /><br /><br /></div>
-                <div> <p >{this.state.cperr}</p></div>
-                <div> <label ><b>Mobilenumber</b></label><br /></div>
-                <div> <input type="text" name="Mobnum" className="one" onChange={this.onHandleChange} /><br /><br /></div>
+                <div><label className="label"><b>Email</b></label><br /></div>
+                <div> <input placeholder="Email"  type="text" name="email" className="input_box" onChange={this.onHandleChange} /><br /></div>
+                <div> <p className="error">{this.state.uerr}</p></div>
+                <div><label className="label"><b>Password</b></label><br /></div>
+                <div> <input placeholder="Password"  type="password" name="password" className="input_box" onChange={this.onHandleChange} /><br /><br /></div>
+                <div> <p className="error">{this.state.perr}</p></div>
+                <div> <label className="label"><b>Confirmpassword</b></label><br /></div>
+                <div> <input placeholder="Confirm Password" type="password" name="Confirmpassword" className="input_box" onChange={this.onHandleChange} /><br /><br /></div>
+                <div> <p className="error" >{this.state.cperr}</p></div>
+                <div> <label className="label"><b>Mobilenumber</b></label><br /></div>
+                <div> <input placeholder="Mobile" type="text" name="Mobnum" className="input_box" onChange={this.onHandleChange} /><br /><br /></div>
               </div>
-              <a href="" onClick={this.onHandleClicks}>you have already account</a>
-              <p >{this.state.phnerr}</p>
-              <button onClick={this.onHandleClick} className="btn1"><b>Register</b></button><a href="" onClick={this.onHandleClicksCancel}>Cancel</a>
+              <a className="already" href="" onClick={this.onHandleClicks}><b id="acct">You have already account</b> </a>
+              <p className="error">{this.state.phnerr}</p>
+              <button className="regbtn" onClick={this.onHandleClick} ><b>Register</b></button><a id="cnl" className="cancel" href="" onClick={this.onHandleClicksCancel}> <b>Cancel </b></a>
             </div>
+            </div> 
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
             </div>
           </div>
         </div>
 
-      </div>
+   
     );
   }
 }

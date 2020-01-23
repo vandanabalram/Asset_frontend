@@ -12,5 +12,14 @@
 }
 
 .regbtn{
-    background-color:#788472;
+    background-color: lightseagreen;
+    color: brown;
+    border-radius: 50px;
+    height: 44px;
+    width: 100px;
+    border: 2px solid white;
+}
+.regbtn:hover{
+   background-color: darkslategray;
+   color: white;
 }

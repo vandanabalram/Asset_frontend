@@ -63,21 +63,21 @@ class LoginPage extends Component {
           <div class="row">
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4 frm">
-              <h1>Signin</h1>
+              <h1><b id="ww">SIGNIN</b></h1>
               <div className="regcont">
 
 
                 <div><label ><b>Email</b></label><br /></div>
-                <div> <input type="text" name="email" className="one" onChange={this.onHandleChange} /><br /></div>
+                <div> <input placeholder="email" type="text" name="email" className="input_box" onChange={this.onHandleChange} /><br /></div>
                 <div> <p >{this.state.uerr}</p></div>
                 <div><label ><b>Password</b></label><br /></div>
-                <div> <input type="password" name="password" className="one" onChange={this.onHandleChange} /><br /><br /></div>
+                <div> <input placeholder="password" type="password" name="password" className="input_box" onChange={this.onHandleChange} /><br /><br /></div>
                 <div> <p >{this.state.perr}</p></div>
 
               </div>
 
-              <button onClick={this.onHandleClick} className="btn1"><b>Signin</b></button>
-              <a href="" onClick={this.onHandleClicksCancel}>Cancel</a>
+              <button onClick={this.onHandleClick} className="lgbtn"><b>Signin</b></button>
+              <a id="cn" href="" onClick={this.onHandleClicksCancel}>Cancel</a>
             </div>
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
             </div>
