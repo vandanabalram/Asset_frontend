@@ -136,17 +136,17 @@ console.log(payload);
         </td>
         <td>
           {UserDetails.IsAdmin ? <button onClick={this.openModal} className="btn btn-primary">Edit</button> : ""}
-          <Modal className="modelbody"
+          <Modal className="modelbodydes"
             isOpen={this.state.modalIsOpen}
             onRequestClose={this.closeModal}
             contentLabel="Register Modal"
           >
-            <form onSubmit={this.onSubmit} className="deskform">
+            <form onSubmit={this.onSubmit} className="tablerowdes">
               <div>
                 <label className="name">Employee_Id:</label>
                 <input
                   type="text"
-                  className="width"
+                  className="rdwidth1"
                   defaultValue={this.props.obj.Employee_Id}
                   onChange={this.onChangeEmployee_Id}
                 />
@@ -154,7 +154,7 @@ console.log(payload);
               <div>
                 <label className="name">Asset_Number: </label>
                 <input type="text"
-                  className="width"
+                  className="rdwidth2"
                   defaultValue={this.props.obj.Asset_Number}
                   onChange={this.onChangeAsset_Number}
                 />
@@ -162,7 +162,7 @@ console.log(payload);
               <div>
                 <label className="name">Name: </label>
                 <input type="text"
-                  className="width"
+                  className="rdwidth3"
                   defaultValue={this.props.obj.Name}
                   onChange={this.onChangeName}
                 />
@@ -170,7 +170,7 @@ console.log(payload);
               <div>
                 <label className="name"> MAC_Address:</label>
                 <input type="text"
-                  className="width"
+                  className="rdwidth4"
                   defaultValue={this.props.obj.MAC_Address}
                   onChange={this.onChangeMAC_Address}
                 />
@@ -178,18 +178,19 @@ console.log(payload);
               <div>
                 <label className="name"> Comment:</label>
                 <input type="text"
-                  className="width"
+                  className="rdwidth5"
                   defaultValue={this.props.obj.Comment}
                   onChange={this.onChangeComment}
                 />
               </div>
               <div className="form-group">
-                <button type="submit" value="send" className="sendbta" onClick={this.onSubmit}>Update</button>
-                <button onClick={this.onHandleClicksCancel} type="button" className="resetbta">Cancel</button>
+                <button type="submit" value="send" className="rdsendbta" onClick={this.onSubmit}>Update</button>
+                <button onClick={this.onHandleClicksCancel} type="button" className="rdresetbta">Cancel</button>
               </div>
             </form>
 
           </Modal>
+          
         </td>
         <td>
           {UserDetails.IsAdmin ? <button onClick={this.delete} className="btn btn-danger">Delete</button> : ""}

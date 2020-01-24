@@ -3,7 +3,7 @@ const initialState = {
   Assest_Number: '',
   Name: '',
   MAC_Address: '',
-  ChargerAssest_Number: '',
+  ChargerAsset_Number: '',
   Comment: ''
 }
 export default (state = initialState, action) => {
@@ -15,7 +15,7 @@ export default (state = initialState, action) => {
         Assest_Number: action.payload.Assest_Number,
         Name: action.payload.Name,
         MAC_Address: action.payload.MAC_Address,
-        ChargerAssest_Number: action.payload.ChargerAssest_Number,
+        ChargerAsset_Number: action.payload.ChargerAsset_Number,
         Comment: action.payload.Comment
       }
     }

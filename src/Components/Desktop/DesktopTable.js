@@ -79,7 +79,7 @@ class DesktopTable extends Component {
               <label className="name">Employee_Id:</label>
               <input
                 type="text"
-                className="width"
+                className="deswidth1"
                 value={this.state.Employee_Id}
                 onChange={this.onChangeEmployee_Id}
               />
@@ -87,7 +87,7 @@ class DesktopTable extends Component {
             <div>
               <label className="name">Asset_Number: </label>
               <input type="text"
-                className="width"
+                className="deswidth2"
                 value={this.state.Asset_Number}
                 onChange={this.onChangeAsset_Number}
               />
@@ -95,7 +95,7 @@ class DesktopTable extends Component {
             <div>
               <label className="name">Name: </label>
               <input type="text"
-                className="width"
+                className="deswidth3"
                 value={this.state.Name}
                 onChange={this.onChangeName}
               />
@@ -103,7 +103,7 @@ class DesktopTable extends Component {
             <div>
               <label className="name"> MAC_Address:</label>
               <input type="text"
-                className="width"
+                className="deswidth4"
                 value={this.state.MAC_Address}
                 onChange={this.onChangeMAC_Address}
               />
@@ -111,14 +111,14 @@ class DesktopTable extends Component {
             <div>
               <label className="name"> Comment:</label>
               <input type="text"
-                className="width"
+                className="deswidth5"
                 value={this.state.Comment}
                 onChange={this.onChangeComment}
               />
             </div>
             <div className="form-group">
-              <button type="submit" value="send" className="sendbta" onClick={this.onSubmit}>Send</button>
-              <button onClick={this.onHandleClicksCancel} type="button" className="resetbta">Cancel</button>
+              <button type="submit" value="send" className="dessendbta" onClick={this.onSubmit}>Send</button>
+              <button onClick={this.onHandleClicksCancel} type="button" className="desresetbta">Cancel</button>
             </div>
           </form>
         </div>

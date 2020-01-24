@@ -37,20 +37,20 @@ class LaptopForm extends Component {
   render() {
     const { UserDetails } = this.props;
     return (
-      <div>
+      <div className="desktoptable">
         <DpNavbar/>
-        <p>Laptop List</p>
-        {UserDetails.IsAdmin ? <button onClick={this.onHandleClicks} >Create</button> : ""}
+        <p className="desk">Laptop List</p>
+        {UserDetails.IsAdmin ? <button className="crtbtn" onClick={this.onHandleClicks} >Create</button> : ""}
         <table className="table table-striped" style={{ marginTop: 20 }}>
           <thead>
             <tr>
-              <th>Employee_Id</th>
-              <th>Asset_Number</th>
-              <th>Name</th>
-              <th>MAC_Address</th>
-              <th>ChargerAssest_Number</th>
-              <th>Comment</th>
-              <th colSpan="2">Action</th>
+              <th className="emp">Employee_Id</th>
+              <th className="emp">Asset_Number</th>
+              <th className="emp">Name</th>
+              <th className="emp">MAC_Address</th>
+              <th className="emp">ChargerAsset_Number</th>
+              <th className="emp">Comment</th>
+              <th  className="emp" colSpan="2">Action</th>
             </tr>
           </thead>
           <tbody>

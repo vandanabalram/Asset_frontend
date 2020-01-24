@@ -182,7 +182,7 @@ class TableRowMisdesk extends Component {
             <div className="form-check">
               <label className="form-check-label">
                 <input type="checkbox"
-                defaultValue={this.props.obj.Mouse}
+                checked={this.state.Mouse}
                   onChange={this.toggleClickMouse}
                   className="form-check-input"
                 />
@@ -192,7 +192,7 @@ class TableRowMisdesk extends Component {
             <div className="form-check">
               <label className="form-check-label">
                 <input type="checkbox"
-                  defaultValue={this.props.obj.Keyboard}
+                  checked={this.state.Keyboard}
                   onChange={this.toggleClickKeyboard}
                   className="form-check-input"
                 />
@@ -202,7 +202,7 @@ class TableRowMisdesk extends Component {
             <div className="form-check">
               <label className="form-check-label">
                 <input type="checkbox"
-                  defaultValue={this.props.obj.Cables}
+                  checked={this.state.Cables}
                   onChange={this.toggleClickCables}
                   className="form-check-input"
                 />

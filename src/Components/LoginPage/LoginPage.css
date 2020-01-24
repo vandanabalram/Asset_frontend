@@ -1,10 +1,10 @@
 .login{
-    background: rgba(147,206,222,1);
+    /* background: rgba(147,206,222,1); */
     height:640px;
 }
 .lgbtn{
     background-color: lightseagreen;
-    color: brown;
+    color:blue;
     border-radius: 50px;
     height: 44px;
     width: 100px;
@@ -16,13 +16,13 @@
 }
 .input_box {
     margin: 2px;
-   
-   color: white;
+    color: white;
      width: 100%;
      margin-bottom: 10px;
      height: 40px;
      font-weight: bold;
-     background-color: #53a7ea;
+     background-color:#775c6c;
+
      font-family: sans-serif;
  } 
  .input_box:hover{

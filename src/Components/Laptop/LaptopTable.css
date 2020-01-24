@@ -1,68 +1,87 @@
-.width{
-    width: 200px;
-    border-top:0px;
-    border-left: 0px;
-    border-right: 0px;
-    margin-left: 18px;
-  }
-  .widthd{
-    margin-left: 20px;
-    width:160px;
-    margin-top: 10px;
-  }
-  .appth{
-    border:solid 1px white;
+.laptopimg{
+    background: url('./desk1.jpeg') no-repeat;
+    border:solid 1px cornsilk;
     background-position: center;
     background-size: cover;
-    height: 200px;
+    height: 600px;
+    width: 1300px;
     padding: 0;
-    margin-top: 100px;
+    margin-top: 70px;
+    
+}
+.lapform{
+    margin-left: 40%;
+    margin-top: 10%;
+}
+.name{
+    color: darkred;
+}
+
+  .lapsendbta{
+    background-color: lightseagreen;
+    color:blue;
+    border-radius: 50px;
+    height: 44px;
+    width: 110px;
+    border: 2px solid white;
+    margin-top: 25px;
+
   }
-  .apptname {
-    padding: 5%;
-    color: rgb(0, 131, 238);
-    font-size: 80px;
-    font-weight: bold;
-    -webkit-text-stroke: 2px white;
-    width: 400px;
-    margin: 0;
-    height: 100px;
-    margin-top: 10px; 
+  .lapsendbta:hover{
+    background-color: darkslategray;
+    color: white;
+ }
+
+
+  .lapresetbta{
+    background-color: lightseagreen;
+    color:blue;
+    border-radius: 50px;
+    height: 44px;
+    width: 110px;
+    border: 2px solid white;
+    margin-left: 100px;
+    margin-top: 25px;
   }
-  .sendbta{
-    margin-right: 100px;
-    height: 40px;
-    border-color: rgb(255, 254, 254);
-    background-color: #ec792c;
-    width: 80px; 
-    margin-top: 50px;
-  }
-  .resetbta{
-    height: 40px;
-    border-color: rgb(255, 254, 254);
-    background-color: #ec792c;
-    width: 80px; 
-    margin-right: 100px;
-    margin-top: 50px;
-  }
-  .formg{
-    margin-top:100px;
-    font-size: 50px;
-    color: #0b7285;
-    margin-bottom: 50px;
-    margin-left:40%; 
-  }
-  .dateta{
-    margin-left: 30px;
-  }
-  .backgroundci{
-    /* background-image: url('../../images/serviceb.jpg'); */
-    height: 200px;
-    width:100%;
-    background-size: cover;
-    margin-top: 100px;
-  }
-  .apptform{
-    margin-left:40%; 
-  
-  }
+  .lapresetbta:hover{
+    background-color: darkslategray;
+    color: white;
+ }
+ .lapwidth1{
+  width: 232px;
+  height: 25px;
+  border: cornsilk;
+  margin-left: 39px;
+
+ }
+ .lapwidth2{
+  width: 232px;
+  height:25px;
+  border: cornsilk;
+  margin-left: 24px;
+
+ }
+ .lapwidth3{
+  width: 232px;
+  height: 25px;
+  border: cornsilk;
+  margin-left: 90px;
+
+ }
+ .lapwidth4{
+  width: 232px;
+  height:25px;
+  border: cornsilk;
+  margin-left: 32px;
+
+ }
+ .lapwidth5{
+  width: 232px;
+  height: 25px;
+  border: cornsilk;
+  margin-left: 62px;
+
+ }
+
+
+

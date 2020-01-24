@@ -11,6 +11,8 @@
 .regbtn{
     background-color: lightseagreen;
     color: rgb(33, 15, 136);
+    border: 2px solid wheat;
+
 }
 .signup{
     color: brown;
@@ -28,19 +30,18 @@
     margin-left: 40px;
 }
 .container{
-    /* background: url('./images1.jpeg') no-repeat ; */
-    width:1000px;
-    height: 1000px;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);   
+    width:1193px;
+    height: 816px;
 }
 .input_box {
     margin: 2px;
-   
    color: white;
      width: 100%;
      margin-bottom: 10px;
      height: 40px;
      font-weight: bold;
-     background-color: #53a7ea;
+     background-color:#775c6c;
      font-family: sans-serif;
  } 
  .input_box:hover{

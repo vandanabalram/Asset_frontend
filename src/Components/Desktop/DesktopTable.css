@@ -16,26 +16,72 @@
 .name{
     color: darkred;
 }
-.width{
-    width: 200px;
-    border-top:0px;
-    border-left: 0px;
-    border-right: 0px;
-    margin-left: 18px;
+
+  .dessendbta{
+    background-color: lightseagreen;
+    color:blue;
+    border-radius: 50px;
+    height: 44px;
+    width: 110px;
+    border: 2px solid white;
+    margin-top: 25px;
+
   }
-  .sendbta{
-    margin-right: 100px;
-    height: 40px;
-    border-color: rgb(255, 254, 254);
-    background-color: #ec792c;
-    width: 80px; 
-    margin-top: 50px;
+  .dessendbta:hover{
+    background-color: darkslategray;
+    color: white;
+ }
+
+
+  .desresetbta{
+    background-color: lightseagreen;
+    color:blue;
+    border-radius: 50px;
+    height: 44px;
+    width: 110px;
+    border: 2px solid white;
+    margin-left: 100px;
+    margin-top: 25px;
   }
-  .resetbta{
-    height: 40px;
-    border-color: rgb(255, 254, 254);
-    background-color: #ec792c;
-    width: 80px; 
-    margin-right: 100px;
-    margin-top: 50px;
-  }
+  .desresetbta:hover{
+    background-color: darkslategray;
+    color: white;
+ }
+ .deswidth1{
+  width: 232px;
+  height: 25px;
+  border: cornsilk;
+  margin-left: 39px;
+
+ }
+ .deswidth2{
+  width: 232px;
+  height:25px;
+  border: cornsilk;
+  margin-left: 24px;
+
+ }
+ .deswidth3{
+  width: 232px;
+  height: 25px;
+  border: cornsilk;
+  margin-left: 90px;
+
+ }
+ .deswidth4{
+  width: 232px;
+  height:25px;
+  border: cornsilk;
+  margin-left: 32px;
+
+ }
+ .deswidth5{
+  width: 232px;
+  height: 25px;
+  border: cornsilk;
+  margin-left: 62px;
+
+ }
+
+
+

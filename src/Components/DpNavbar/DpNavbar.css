@@ -1,0 +1,12 @@
+.dashbtn{
+    background-color: lightseagreen;
+    color:blue;
+    border-radius: 50px;
+    height: 44px;
+    width: 110px;
+    border: 2px solid white;
+}
+.dashbtn:hover{
+   background-color: darkslategray;
+   color: white;
+}

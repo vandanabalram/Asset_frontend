@@ -31,6 +31,11 @@ class LoginPage extends Component {
       password: this.state.password,
     }
 
+  //   confirmmail=(e)=>{
+  //     sessionStorage.setItem('change',this.state.email)
+  //     BrowserHistory.push('/confirmmail');
+  // }
+
     if (this.state.email.length === 0 && this.state.password.length === 0) {
       this.setState({
         uerr: "Email is required",
@@ -73,7 +78,7 @@ class LoginPage extends Component {
                 <div><label ><b>Password</b></label><br /></div>
                 <div> <input placeholder="password" type="password" name="password" className="input_box" onChange={this.onHandleChange} /><br /><br /></div>
                 <div> <p >{this.state.perr}</p></div>
-
+                <div><a onClick={this.confirmmail} className="forgetpassword">Forget Password</a></div>
               </div>
 
               <button onClick={this.onHandleClick} className="lgbtn"><b>Signin</b></button>

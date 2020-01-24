@@ -14,7 +14,7 @@ class LaptopTable extends Component {
       Asset_Number: '',
       Name: '',
       MAC_Address: '',
-      ChargerAssest_Number: '',
+      ChargerAsset_Number: '',
       Comment: ''
     }
   }
@@ -41,9 +41,9 @@ class LaptopTable extends Component {
       MAC_Address: e.target.value
     })
   }
-  onChangeChargerAssest_Number = (e) => {
+  onChangeChargerAsset_Number = (e) => {
     this.setState({
-      ChargerAssest_Number: e.target.value
+      ChargerAsset_Number: e.target.value
     })
   }
   onChangeComment = (e) => {
@@ -58,7 +58,7 @@ class LaptopTable extends Component {
       Asset_Number: this.state.Asset_Number,
       Name: this.state.Name,
       MAC_Address: this.state.MAC_Address,
-      ChargerAssest_Number: this.state.ChargerAssest_Number,
+      ChargerAsset_Number: this.state.ChargerAsset_Number,
       Comment: this.state.Comment,
     };
 
@@ -70,63 +70,56 @@ class LaptopTable extends Component {
   }
 
   render() {
-    const { Employee_Id, Asset_Number, Name, MAC_Address, ChargerAssest_Number, Comment } = this.state
+    const { Employee_Id, Asset_Number, Name, MAC_Address, ChargerAsset_Number, Comment } = this.state
     return (
       <div>
-
-        <div className="row1">
-          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-          <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 appth">
-            <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-          </div>
-        </div>
-        <div style={{ marginTop: 10 }}>
-          <form onSubmit={this.onSubmit} className="apptform">
+        <div className="laptopimg" style={{ marginTop: 10 }}>
+          <form onSubmit={this.onSubmit} className="deskform">
             <div>
-              <label>Employee_Id</label>
+              <label className="name">Employee_Id:</label>
               <input
                 type="text"
-                className="width"
+                className="lapwidth1"
                 value={this.state.Employee_Id}
                 onChange={this.onChangeEmployee_Id}
               />
             </div>
             <div>
-              <label>Asset_Number </label>
+              <label className="name">Asset_Number :</label>
               <input type="text"
-                className="width"
+                className="lapwidth2"
                 value={this.state.Asset_Number}
                 onChange={this.onChangeAsset_Number}
               />
             </div>
-            <div>
-              <label>Name </label>
+            <div >
+              <label className="name">Name :</label>
               <input type="text"
-                className="width"
+                className="lapwidth3"
                 value={this.state.Name}
                 onChange={this.onChangeName}
               />
             </div>
             <div>
-              <label> MAC_Address</label>
+              <label className="name"> MAC_Address  :</label>
               <input type="text"
-                className="width"
+                className="lapwidth4"
                 value={this.state.MAC_Address}
                 onChange={this.onChangeMAC_Address}
               />
             </div>
             <div>
-              <label>ChargerAssest_Number</label>
+              <label className="name">ChargerAsset_Number  :</label>
               <input type="text"
-                className="width"
-                value={this.state.ChargerAssest_Number}
-                onChange={this.onChangeChargerAssest_Number}
+                className="lapwidth5"
+                value={this.state.ChargerAsset_Number}
+                onChange={this.onChangeChargerAsset_Number}
               />
             </div>
             <div>
-              <label> Comment </label>
+              <label className="name"> Comment :</label>
               <input type="text"
-                className="width"
+                className="lapwidth6"
                 value={this.state.Comment}
                 onChange={this.onChangeComment}
               />
@@ -147,9 +140,9 @@ const mapStateToProps = (state) => {
   const { Asset_Number } = state.Laptopreducer
   const { Name } = state.Laptopreducer
   const { MAC_Address } = state.Laptopreducer
-  const { ChargerAssest_Number } = state.Laptopreducer
+  const { ChargerAsset_Number } = state.Laptopreducer
   const { Comment } = state.Laptopreducer
 
-  return { Employee_Id, Asset_Number, Name, MAC_Address, ChargerAssest_Number, Comment }
+  return { Employee_Id, Asset_Number, Name, MAC_Address, ChargerAsset_Number, Comment }
 }
 export default connect(mapStateToProps, { questionHandle })(LaptopTable);

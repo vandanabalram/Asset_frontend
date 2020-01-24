@@ -1,20 +1,47 @@
 .misimg{
-    background: url('./misimg.jpeg') no-repeat;
+    background: url('./inven.jpg') no-repeat;
     border:solid 1px cornsilk;
     background-position: center;
     background-size: cover;
-    height:  650px;
+    height:  600px;
     width:1300px;
     padding: 0;
 }
 .deskbtn{
-    width:649px;
-    color:brown;
-}
-.lapbtn{
-    width:649px;
-    color:brown;
+    background-color: lightseagreen;
+    color: brown;
+    border-radius: 50px;
+    height: 45px;
+    width: 643px;
+    border: 2px solid white;
     
-
-
 }
+.deskbtn:hover{
+    background-color: darkslategray;
+    color: white;
+   }
+   
+
+
+.lapbtn{
+    background-color: lightseagreen;
+    color: brown;
+    border-radius: 50px;
+    height: 45px;
+    width:  643px;
+    border: 2px solid white;
+   
+}
+.lapbtn:hover{
+    background-color: darkslategray;
+    color: white;
+   }
+
+.inven{
+    color:red;
+    font-size: 50px;
+    font-style: italic;
+    margin-left: 494px;
+    margin-top: 200px;
+}
+  

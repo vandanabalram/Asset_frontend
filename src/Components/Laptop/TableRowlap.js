@@ -18,7 +18,7 @@ class TableRowlap extends Component {
       Asset_Number: '',
       Name: '',
       MAC_Address: '',
-      ChargerAssest_Number:'',
+      ChargerAsset_Number:'',
       Comment: '',
       _id:'',
 
@@ -54,9 +54,9 @@ class TableRowlap extends Component {
       MAC_Address: e.target.value
     })
   }
-  onChangeChargerAssest_Number = (e) => {
+  onChangeChargerAsset_Number = (e) => {
     this.setState({
-      ChargerAssest_Number: e.target.value
+      ChargerAsset_Number: e.target.value
     })
   }
 
@@ -79,7 +79,7 @@ class TableRowlap extends Component {
     this.setState({ Asset_Number: this.props.obj.Asset_Number })
     this.setState({ Name: this.props.obj.Name })
     this.setState({ MAC_Address: this.props.obj.MAC_Address })
-    this.setState({ ChargerAssest_Number: this.props.obj.ChargerAssest_Number })
+    this.setState({ ChargerAsset_Number: this.props.obj.ChargerAsset_Number })
     this.setState({ Comment: this.props.obj.Comment })
     this.setState({ _id: this.props.obj._id })
 
@@ -111,7 +111,7 @@ class TableRowlap extends Component {
       Asset_Number: this.state.Asset_Number,
       Name: this.state.Name,
       MAC_Address: this.state.MAC_Address,
-      ChargerAssest_Number: this.state.ChargerAssest_Number,
+      ChargerAsset_Number: this.state.ChargerAsset_Number,
       Comment: this.state.Comment,
     };
 console.log(payload);
@@ -140,7 +140,7 @@ console.log(payload);
           {this.props.obj.MAC_Address}
         </td>
         <td>
-          {this.props.obj.ChargerAssest_Number}
+          {this.props.obj.ChargerAsset_Number}
         </td>
         <td>
           {this.props.obj.Comment}
@@ -187,11 +187,11 @@ console.log(payload);
                 />
               </div>
               <div>
-                <label className="name"> ChargerAssest_Number:</label>
+                <label className="name"> ChargerAsset_Number:</label>
                 <input type="text"
                   className="width"
-                  defaultValue={this.props.obj.ChargerAssest_Number}
-                  onChange={this.onChangeChargerAssest_Number}
+                  defaultValue={this.props.obj.ChargerAsset_Number}
+                  onChange={this.onChangeChargerAsset_Number}
                 />
               </div>
               <div>
