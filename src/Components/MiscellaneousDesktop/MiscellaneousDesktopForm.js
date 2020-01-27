@@ -5,6 +5,7 @@ import BrowserHistory from '../Utils/BrowserHistory';
 import { GetUserDetailsById } from '../../Action/Registeraction';
 import { connect } from 'react-redux';
 import DpNavbar from '../DpNavbar/DpNavbar';
+import "./MiscellaneousDesktopForm.css"
 
 class MiscellaneousDesktopForm extends Component {
   constructor(props) {
@@ -40,19 +41,19 @@ class MiscellaneousDesktopForm extends Component {
     const { UserDetails } = this.props;
 
     return (
-      <div className="desktoptable">
+      <div className="misdesktoptable">
         <DpNavbar/>
-        <p className="desk">MiscellaneousDesktop List</p>
-        {UserDetails.IsAdmin ? <button onClick={this.onHandleClicks}>Create</button> : ""}
+        <p className="misdesk">InventoryDesktop_List</p>
+        {UserDetails.IsAdmin ? <button className="misdescrtbtn" onClick={this.onHandleClicks}>Create</button> : ""}
         <table className="table table-striped" style={{ marginTop: 60 }}>
           <thead>
             <tr>
-              <th>Asset_Number</th>
-              <th>Desktop</th>
-              <th>MAC_Address</th>
-              <th>Accessories</th>
-              <th>Comment</th>
-              <th colSpan="2">Action</th>
+              <th className="misdeskemp">Asset_Number</th>
+              <th className="misdeskemp">Desktop</th>
+              <th className="misdeskemp">MAC_Address</th>
+              <th className="misdeskemp">Accessories</th>
+              <th className="misdeskemp">Comment</th>
+              <th className="misdeskemp" colSpan="2">Action</th>
             </tr>
           </thead>
           <tbody>

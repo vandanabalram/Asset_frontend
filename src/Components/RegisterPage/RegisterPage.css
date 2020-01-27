@@ -8,12 +8,12 @@
 .label{
     color: #293a21;
 }
-.regbtn{
+/* .regbtn{
     background-color: lightseagreen;
     color: rgb(33, 15, 136);
     border: 2px solid wheat;
 
-}
+} */
 .signup{
     color: brown;
     margin-left: 50px;
@@ -26,8 +26,16 @@
     color: red;
 }
 #cnl{
-    color: blue;
-    margin-left: 40px;
+    background-color: #3bb58285;
+    color: brown;
+    border-radius: 50px;
+    height: 44px;
+    width: 100px;
+    border: 2px solid white;
+}
+#cnl:hover{
+   background-color: darkslategray;
+   color: white;
 }
 .container{
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);   

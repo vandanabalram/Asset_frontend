@@ -23,7 +23,7 @@ password: this.state.password
 }
 console.log(payload)
 
-axios.put(`http://localhost:4090/reset`,payload)
+axios.put(`http://localhost:3001/reset`,payload)
 .then(console.log('update'))
 .catch(err => console.log(err))
 window.location.reload();
@@ -33,7 +33,7 @@ window.location.reload();
 render() {
 
 return (
-<div className="frgtpassw">
+<div className="forgetpassword">
 <label>New Password</label><br/>
 <input type="text" onChange={this.handlechange} placeholder="enter new password"></input><br/>
 <button onClick={this.changepassw} name="password" className="btn btn-danger">change password</button>

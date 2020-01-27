@@ -5,6 +5,7 @@ import BrowserHistory from '../Utils/BrowserHistory';
 import { GetUserDetailsById } from '../../Action/Registeraction';
 import { connect } from 'react-redux';
 import DpNavbar from '../DpNavbar/DpNavbar';
+import './MisLapForm.css';
 
 class MiscellaneousLaptopForm extends Component {
   constructor(props) {
@@ -39,18 +40,18 @@ class MiscellaneousLaptopForm extends Component {
     const { UserDetails } = this.props;
 
     return (
-      <div className="desktoptable">
+      <div className="mislaptoptable">
         <DpNavbar/>
-        <p className="desk">MiscellaneousLaptop List</p>
-        {UserDetails.IsAdmin ? <button onClick={this.onHandleClicks}>Create</button> : ""}
+        <p className="mislap">MiscellaneousLaptop List</p>
+        {UserDetails.IsAdmin ? <button className="mislapcrtbtn" onClick={this.onHandleClicks}>Create</button> : ""}
         <table className="table table-striped" style={{ marginTop: 60 }}>
           <thead>
             <tr>
-              <th>Asset_Number</th>
-              <th>MAC_Address</th>
-              <th>ChargerAsset_Number</th>
-              <th>Comment</th>
-              <th colSpan="2">Action</th>
+              <th className="mislapemp">Asset_Number</th>
+              <th className="mislapemp">MAC_Address</th>
+              <th className="mislapemp">ChargerAsset_Number</th>
+              <th className="mislapemp">Comment</th>
+              <th className="mislapemp" colSpan="2">Action</th>
 
             </tr>
           </thead>

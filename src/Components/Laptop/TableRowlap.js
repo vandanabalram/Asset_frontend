@@ -3,7 +3,7 @@ import axios from 'axios';
 import { GetUserDetailsById } from '../../Action/Registeraction';
 import { connect } from 'react-redux';
 import Modal from 'react-modal';
-// import './TableRow.css';
+import './TableRowlap.css';
 import { updateHandle } from '../../Action/LaptopAction'
 import BrowserHistory from '../Utils/BrowserHistory';
 
@@ -147,17 +147,17 @@ console.log(payload);
         </td>
         <td>
           {UserDetails.IsAdmin ? <button onClick={this.openModal} className="btn btn-primary">Edit</button> : ""}
-          <Modal className="modelbody"
+          <Modal className="modelbodylap"
             isOpen={this.state.modalIsOpen}
             onRequestClose={this.closeModal}
             contentLabel="Register Modal"
           >
-            <form onSubmit={this.onSubmit} className="deskform">
+            <form onSubmit={this.onSubmit} className="tablerowlap">
               <div>
                 <label className="name">Employee_Id:</label>
                 <input
                   type="text"
-                  className="width"
+                  className="rlwidth1"
                   defaultValue={this.props.obj.Employee_Id}
                   onChange={this.onChangeEmployee_Id}
                 />
@@ -165,7 +165,7 @@ console.log(payload);
               <div>
                 <label className="name">Asset_Number: </label>
                 <input type="text"
-                  className="width"
+                  className="rlwidth2"
                   defaultValue={this.props.obj.Asset_Number}
                   onChange={this.onChangeAsset_Number}
                 />
@@ -173,7 +173,7 @@ console.log(payload);
               <div>
                 <label className="name">Name: </label>
                 <input type="text"
-                  className="width"
+                  className="rlwidth3"
                   defaultValue={this.props.obj.Name}
                   onChange={this.onChangeName}
                 />
@@ -181,7 +181,7 @@ console.log(payload);
               <div>
                 <label className="name"> MAC_Address:</label>
                 <input type="text"
-                  className="width"
+                  className="rlwidth4"
                   defaultValue={this.props.obj.MAC_Address}
                   onChange={this.onChangeMAC_Address}
                 />
@@ -189,7 +189,7 @@ console.log(payload);
               <div>
                 <label className="name"> ChargerAsset_Number:</label>
                 <input type="text"
-                  className="width"
+                  className="rlwidth5"
                   defaultValue={this.props.obj.ChargerAsset_Number}
                   onChange={this.onChangeChargerAsset_Number}
                 />
@@ -197,15 +197,15 @@ console.log(payload);
               <div>
                 <label className="name"> Comment:</label>
                 <input type="text"
-                  className="width"
+                  className="rlwidth6"
 
                   defaultValue={this.props.obj.Comment}
                   onChange={this.onChangeComment}
                 />
               </div>
               <div className="form-group">
-                <button type="submit" value="send" className="sendbta" onClick={this.onSubmit}>Update</button>
-                <button onClick={this.onHandleClicksCancel} type="button" className="resetbta">Cancel</button>
+                <button type="submit" value="send" className="lapsendbta" onClick={this.onSubmit}>Update</button>
+                <button onClick={this.onHandleClicksCancel} type="button" className="lapresetbta">Cancel</button>
               </div>
             </form>
 

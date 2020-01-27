@@ -17,6 +17,7 @@ import MiscellaneousDesktopForm from './Components/MiscellaneousDesktop/Miscella
 import MiscellaneousLaptopTable from './Components/MiscellaneousLaptop/MiscellaneousLaptopTable';
 import MiscellaneousLaptopForm from './Components/MiscellaneousLaptop/MiscellaneousLaptopForm';
 import DpNavbar from './Components/DpNavbar/DpNavbar';
+import Forgetpassword from './Components/LoginPage/Forgetpassword';
 
 const PrivateRoute = ({ component: IncomingComponent, ...rest }) => (
   <Route
@@ -51,7 +52,7 @@ export default class App extends Component {
           <PrivateRoute exact path='/miscellaneousdesktopform' component={MiscellaneousDesktopForm}></PrivateRoute>
           <PrivateRoute exact path='/miscellaneouslaptoptable' component={MiscellaneousLaptopTable}></PrivateRoute>
           <PrivateRoute exact path='/miscellaneouslaptopform' component={MiscellaneousLaptopForm}></PrivateRoute>
-
+          <Route exact path='/forgetpassword' component={Forgetpassword}></Route>
 
         </switch>
       </Router>

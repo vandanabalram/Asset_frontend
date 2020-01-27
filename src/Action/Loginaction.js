@@ -21,6 +21,7 @@ export function loginHandle(payload) {
         else {
           const LoginDet = JSON.stringify({ 'token': response.data.token, 'userId': response.data.userId });
           localStorage.setItem('LOGINDETAILS', LoginDet);
+          sessionStorage.setItem('email', response.data.email)
           BrowserHistory.push('./dashboard')
         }
       });

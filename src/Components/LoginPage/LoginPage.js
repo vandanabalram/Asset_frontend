@@ -19,6 +19,10 @@ class LoginPage extends Component {
   onHandleClick = (e) => {
     BrowserHistory.push('/login');
   }
+  confirmmail=(e)=>{
+    sessionStorage.setItem('change',this.state.email)
+    BrowserHistory.push('/forgetpassword');
+}
 
   onHandleClicksCancel = (e) => {
     BrowserHistory.push('/');
@@ -31,10 +35,7 @@ class LoginPage extends Component {
       password: this.state.password,
     }
 
-  //   confirmmail=(e)=>{
-  //     sessionStorage.setItem('change',this.state.email)
-  //     BrowserHistory.push('/confirmmail');
-  // }
+    
 
     if (this.state.email.length === 0 && this.state.password.length === 0) {
       this.setState({
@@ -78,11 +79,11 @@ class LoginPage extends Component {
                 <div><label ><b>Password</b></label><br /></div>
                 <div> <input placeholder="password" type="password" name="password" className="input_box" onChange={this.onHandleChange} /><br /><br /></div>
                 <div> <p >{this.state.perr}</p></div>
-                <div><a onClick={this.confirmmail} className="forgetpassword">Forget Password</a></div>
+                <div><a id="fp" onClick={this.confirmmail} className="forgetpassword"><b>Forget Password</b></a></div>
               </div>
 
               <button onClick={this.onHandleClick} className="lgbtn"><b>Signin</b></button>
-              <a id="cn" href="" onClick={this.onHandleClicksCancel}>Cancel</a>
+              <button id="cn" href="" onClick={this.onHandleClicksCancel}>Cancel</button>
             </div>
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
             </div>

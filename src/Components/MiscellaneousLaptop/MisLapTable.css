@@ -1,4 +1,4 @@
-.laptopimg{
+.mislaptopimg{
     background: url('./desk1.jpeg') no-repeat;
     border:solid 1px cornsilk;
     background-position: center;
@@ -9,7 +9,7 @@
     margin-top: 70px;
     
 }
-.lapform{
+.mislapform{
     margin-left: 40%;
     margin-top: 10%;
 }
@@ -17,7 +17,7 @@
     color: darkred;
 }
 
-.lapsendbta{
+.mislapsendbta{
     background-color: lightseagreen;
     color:blue;
     border-radius: 50px;
@@ -28,13 +28,13 @@
     
 
   }
-.lapsendbta:hover{
+.mislapsendbta:hover{
     background-color: darkslategray;
     color: white;
  }
 
 
-  .lapresetbta{
+  .mislapresetbta{
     background-color: lightseagreen;
     color:blue;
     border-radius: 50px;
@@ -44,52 +44,39 @@
     margin-left: 100px;
     margin-top: 25px;
   }
-  .lapresetbta:hover{
+  .mislapresetbta:hover{
     background-color: darkslategray;
     color: white;
  }
- .lapwidth1{
+ .mislapwidth1{
   width: 232px;
   height: 25px;
   border: cornsilk;
-  margin-left: 93px;
+  margin-left: 64px;
 
  }
- .lapwidth2{
+ .mislapwidth2{
   width: 232px;
   height:25px;
   border: cornsilk;
   margin-left: 75px;
 
  }
- .lapwidth3{
+ .mislapwidth3{
   width: 232px;
   height: 25px;
   border: cornsilk;
-  margin-left: 139px;
+  margin-left: 10px;
 
  }
- .lapwidth4{
+ .mislapwidth4{
   width: 232px;
   height:25px;
   border: cornsilk;
-  margin-left: 81px;
+  margin-left: 106px;
 
  }
- .lapwidth5{
-  width: 232px;
-  height: 25px;
-  border: cornsilk;
-  margin-left: 17px;
-
- }
- .lapwidth6{
-  width: 232px;
-  height: 25px;
-  border: cornsilk;
-  margin-left: 111px;
-
- }
+ 
 
 
 

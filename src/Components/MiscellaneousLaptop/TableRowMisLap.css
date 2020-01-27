@@ -1,51 +1,45 @@
-.modelbodydes{
+.modelbodymislap{
     width:600px;
     border:1px solid black;
     margin-left: 325px;
-    margin-top: 50px;
-    background-color:#636363;
+    margin-top: 100px;
+    background-color:#E0EAFC;
   }
-.tablerowdes{
+  .tablerowmislap{
   margin-top: 50px;
   margin-left: 50px;
-}
-
-.rdwidth1{
+  }
+  
+  .rmlwidth1{
   width: 232px;
   height: 25px;
   border: cornsilk;
-  margin-left: 39px;
-
- }
- .rdwidth2{
+  margin-left: 66px;
+  
+  }
+  .rmlwidth2{
   width: 232px;
   height:25px;
   border: cornsilk;
-  margin-left: 24px;
-
- }
- .rdwidth3{
+  margin-left: 73px;
+  
+  }
+  .rmlwidth3{
   width: 232px;
   height: 25px;
   border: cornsilk;
-  margin-left: 90px;
-
- }
- .rdwidth4{
+  margin-left: 10px;
+  
+  }
+  .rmlwidth4{
   width: 232px;
   height:25px;
   border: cornsilk;
-  margin-left: 32px;
-
- }
- .rdwidth5{
-  width: 232px;
-  height: 25px;
-  border: cornsilk;
-  margin-left: 61px;
-
- }
- .rdsendbta{
+  margin-left: 106px;
+  
+  }
+  
+  .mislapsendbta{
   background-color: lightseagreen;
   color:blue;
   border-radius: 50px;
@@ -53,16 +47,16 @@
   width: 110px;
   border: 2px solid white;
   margin-top: 25px;
-  margin-left: 89px;
-
-}
-.rdsendbta:hover{
+  margin-left: 132px;
+  
+  }
+  .mislapsendbta:hover{
   background-color: darkslategray;
   color: white;
-}
-
-
-.rdresetbta{
+  }
+  
+  
+  .mislapresetbta{
   background-color: lightseagreen;
   color:blue;
   border-radius: 50px;
@@ -71,9 +65,9 @@
   border: 2px solid white;
   margin-left: 100px;
   margin-top: 25px;
-}
-.rdresetbta:hover{
+  }
+  .mislapresetbta:hover{
   background-color: darkslategray;
   color: white;
-}
- 
+  }
+  

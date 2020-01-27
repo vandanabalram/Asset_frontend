@@ -1,4 +1,4 @@
-.laptopimg{
+.misdesktopimg{
     background: url('./desk1.jpeg') no-repeat;
     border:solid 1px cornsilk;
     background-position: center;
@@ -9,7 +9,7 @@
     margin-top: 70px;
     
 }
-.lapform{
+.misdeskform{
     margin-left: 40%;
     margin-top: 10%;
 }
@@ -17,7 +17,7 @@
     color: darkred;
 }
 
-.lapsendbta{
+  .misdessendbta{
     background-color: lightseagreen;
     color:blue;
     border-radius: 50px;
@@ -25,16 +25,15 @@
     width: 110px;
     border: 2px solid white;
     margin-top: 25px;
-    
 
   }
-.lapsendbta:hover{
+  .misdessendbta:hover{
     background-color: darkslategray;
     color: white;
  }
 
 
-  .lapresetbta{
+  .misdesresetbta{
     background-color: lightseagreen;
     color:blue;
     border-radius: 50px;
@@ -44,53 +43,43 @@
     margin-left: 100px;
     margin-top: 25px;
   }
-  .lapresetbta:hover{
+  .misdesresetbta:hover{
     background-color: darkslategray;
     color: white;
  }
- .lapwidth1{
+ .misdeswidth1{
   width: 232px;
   height: 25px;
   border: cornsilk;
-  margin-left: 93px;
+  margin-left: 39px;
 
  }
- .lapwidth2{
+ .misdeswidth2{
+  width: 232px;
+  height:25px;
+  border: cornsilk;
+  margin-left: 86px;
+
+ }
+ .misdeswidth3{
+  width: 232px;
+  height: 25px;
+  border: cornsilk;
+  margin-left: 46px;
+
+ }
+ .misdeswidth4{
   width: 232px;
   height:25px;
   border: cornsilk;
   margin-left: 75px;
 
  }
- .lapwidth3{
-  width: 232px;
-  height: 25px;
-  border: cornsilk;
-  margin-left: 139px;
-
- }
- .lapwidth4{
-  width: 232px;
-  height:25px;
-  border: cornsilk;
-  margin-left: 81px;
-
- }
- .lapwidth5{
-  width: 232px;
-  height: 25px;
-  border: cornsilk;
-  margin-left: 17px;
-
- }
- .lapwidth6{
-  width: 232px;
-  height: 25px;
-  border: cornsilk;
-  margin-left: 111px;
-
+ .box{
+   margin-left: 150px ;
+   margin-top: -30px;
  }
 
-
+ 
 
 

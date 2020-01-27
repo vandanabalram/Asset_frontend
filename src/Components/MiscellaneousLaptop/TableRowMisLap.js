@@ -4,7 +4,7 @@ import { GetUserDetailsById } from '../../Action/Registeraction';
 import { connect } from 'react-redux';
 import Modal from 'react-modal';
 // import DesktopTable from './DesktopTable';
-// import './TableRow.css';
+import './TableRowMisLap.css';
 import { updateHandle } from '../../Action/MisLapAction';
 import BrowserHistory from '../Utils/BrowserHistory';
 
@@ -122,17 +122,17 @@ console.log(payload);
         </td>
         <td>
           {UserDetails.IsAdmin ? <button onClick={this.openModal} className="btn btn-primary">Edit</button> : ""}
-          <Modal className="modelbody"
+          <Modal className="modelbodymislap"
             isOpen={this.state.modalIsOpen}
             onRequestClose={this.closeModal}
             contentLabel="Register Modal"
           >
-            <form onSubmit={this.onSubmit} className="deskform">
+            <form onSubmit={this.onSubmit} className="tablerowmislap">
              
               <div>
                 <label className="name">Asset_Number: </label>
                 <input type="text"
-                  className="width"
+                  className="rmlwidth1"
                   defaultValue={this.props.obj.Asset_Number}
                   onChange={this.onChangeAsset_Number}
                 />
@@ -141,7 +141,7 @@ console.log(payload);
               <div>
                 <label className="name"> MAC_Address:</label>
                 <input type="text"
-                  className="width"
+                  className="rmlwidth2"
                   defaultValue={this.props.obj.MAC_Address}
                   onChange={this.onChangeMAC_Address}
                 />
@@ -149,7 +149,7 @@ console.log(payload);
               <div>
                 <label className="name"> ChargerAsset_Number:</label>
                 <input type="text"
-                  className="width"
+                  className="rmlwidth3"
                   defaultValue={this.props.obj.ChargerAsset_Number}
                   onChange={this.onChangeChargerAsset_Number}
                 />
@@ -157,15 +157,15 @@ console.log(payload);
               <div>
                 <label className="name"> Comment:</label>
                 <input type="text"
-                  className="width"
+                  className="rmlwidth4"
 
                   defaultValue={this.props.obj.Comment}
                   onChange={this.onChangeComment}
                 />
               </div>
               <div className="form-group">
-                <button type="submit" value="send" className="sendbta" onClick={this.onSubmit}>Update</button>
-                <button onClick={this.onHandleClicksCancel} type="button" className="resetbta">Cancel</button>
+                <button type="submit" value="send" className="mislapsendbta" onClick={this.onSubmit}>Update</button>
+                <button onClick={this.onHandleClicksCancel} type="button" className="mislapresetbta">Cancel</button>
               </div>
             </form>
 

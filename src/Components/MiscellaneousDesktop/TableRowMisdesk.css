@@ -1,51 +1,45 @@
-.modelbodydes{
+.modelbodymisdes{
     width:600px;
     border:1px solid black;
     margin-left: 325px;
-    margin-top: 50px;
-    background-color:#636363;
+    margin-top: 100px;
+    background-color:#E0EAFC;
   }
-.tablerowdes{
+.tablerowmisdes{
   margin-top: 50px;
   margin-left: 50px;
 }
 
-.rdwidth1{
+.rmdwidth1{
   width: 232px;
   height: 25px;
   border: cornsilk;
-  margin-left: 39px;
+  margin-left: 21px;
 
  }
- .rdwidth2{
+ .rmdwidth2{
   width: 232px;
   height:25px;
   border: cornsilk;
-  margin-left: 24px;
+  margin-left:68px;
 
  }
- .rdwidth3{
+ .rmdwidth3{
   width: 232px;
   height: 25px;
   border: cornsilk;
-  margin-left: 90px;
+  margin-left: 28px;
 
  }
- .rdwidth4{
+ .rmd1width4{
   width: 232px;
   height:25px;
   border: cornsilk;
-  margin-left: 32px;
+  margin-left: 64px;
 
  }
- .rdwidth5{
-  width: 232px;
-  height: 25px;
-  border: cornsilk;
-  margin-left: 61px;
-
- }
- .rdsendbta{
+ 
+ .rmdsendbta{
   background-color: lightseagreen;
   color:blue;
   border-radius: 50px;
@@ -56,13 +50,13 @@
   margin-left: 89px;
 
 }
-.rdsendbta:hover{
+.rmdsendbta:hover{
   background-color: darkslategray;
   color: white;
 }
 
 
-.rdresetbta{
+.rmdresetbta{
   background-color: lightseagreen;
   color:blue;
   border-radius: 50px;
@@ -72,8 +66,13 @@
   margin-left: 100px;
   margin-top: 25px;
 }
-.rdresetbta:hover{
+.rmdresetbta:hover{
   background-color: darkslategray;
   color: white;
 }
+ 
+.box1{
+    margin-left: 150px ;
+    margin-top: -30px;
+  }
  

@@ -4,6 +4,8 @@ import axios from 'axios';
 import BrowserHistory from '../Utils/BrowserHistory';
 import { questionHandle } from '../../Action/MiscellaneousDesktopAction'
 import { connect } from 'react-redux';
+import './MiscellaneousDesktopTable.css';
+
 
 class MiscellaneousDesktopTable extends Component {
   constructor(props) {
@@ -83,12 +85,12 @@ class MiscellaneousDesktopTable extends Component {
     return (
       <div >
 
-        <div className="desktopimg" style={{ marginTop: 10 }}>
-          <form onSubmit={this.onSubmit} className="deskform">
+        <div className="misdesktopimg" style={{ marginTop: 10 }}>
+          <form onSubmit={this.onSubmit} className="misdeskform">
             <div>
               <label className="name">Asset_Number: </label>
               <input type="text"
-                className="width"
+                className="misdeswidth1"
                 value={this.state.Asset_Number}
                 onChange={this.onChangeAsset_Number}
               />
@@ -96,7 +98,7 @@ class MiscellaneousDesktopTable extends Component {
             <div>
               <label className="name"> Desktop: </label>
               <input type="text"
-                className="width"
+                className="misdeswidth2"
                 value={this.state.Desktop}
                 onChange={this.onChangeDesktop}
               />
@@ -104,23 +106,25 @@ class MiscellaneousDesktopTable extends Component {
             <div>
               <label className="name"> MAC_Address:</label>
               <input type="text"
-                className="width"
+                className="misdeswidth3"
                 value={this.state.MAC_Address}
                 onChange={this.onChangeMAC_Address}
               />
             </div>
             <div>
-            <label className="name">Accessories: </label>
-            <div className="form-check">
-              <label className="form-check-label">
+            <label className="name ">Accessories: </label>
+            <div className="box">
+            <div className="form-check ">
+              <label className="form-check-label ">
                 <input type="checkbox"
                   onChange={this.toggleClickMouse}
                   className="form-check-input"
                 />
                 Mouse
             </label>
-            </div>
-            <div className="form-check">
+            </div >
+          
+            <div className="form-check ">
               <label className="form-check-label">
                 <input type="checkbox"
                   onChange={this.toggleClickKeyboard}
@@ -129,8 +133,8 @@ class MiscellaneousDesktopTable extends Component {
                 Keyboard
             </label>
             </div>
-            <div className="form-check">
-              <label className="form-check-label">
+            <div className="form-check ">
+              <label className="form-check-label ">
                 <input type="checkbox"
                   onChange={this.toggleClickCables}
                   className="form-check-input"
@@ -142,15 +146,15 @@ class MiscellaneousDesktopTable extends Component {
             <div>
               <label className="name">Comment:</label>
               <input type="text"
-                className="width"
+                className="misdeswidth4"
                 // value={this.state.Comment}
                 onChange={this.Comment}
               />
             </div>
-            
+            </div>
             <div className="form-group">
-              <button type="submit" value="send" className="sendbta" onClick={this.onSubmit}>Send</button>
-              <button onClick={this.onHandleClicksCancel} type="button" className="resetbta">Cancel</button>
+              <button type="submit" value="send" className="misdessendbta" onClick={this.onSubmit}>Send</button>
+              <button onClick={this.onHandleClicksCancel} type="button" className="misdesresetbta">Cancel</button>
             </div>
           </form>
         </div>

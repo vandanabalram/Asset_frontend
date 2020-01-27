@@ -133,7 +133,7 @@ class RegisterPage extends Component {
               </div>
               <a className="already" href="" onClick={this.onHandleClicks}><b id="acct">You have already account</b> </a>
               <p className="error">{this.state.phnerr}</p>
-              <button className="regbtn" onClick={this.onHandleClick} ><b>Register</b></button><a id="cnl" className="cancel" href="" onClick={this.onHandleClicksCancel}> <b>Cancel </b></a>
+              <button className="regbtn" onClick={this.onHandleClick} ><b>Register</b></button><button id="cnl"  href="" onClick={this.onHandleClicksCancel}> <b>Cancel </b></button>
             </div>
             </div> 
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">

@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import Modal from 'react-modal';
 import { updateHandle } from '../../Action/MiscellaneousDesktopAction'
 import BrowserHistory from '../Utils/BrowserHistory';
+import './TableRowMisdesk.css';
 
 
 class TableRowMisdesk extends Component {
@@ -147,16 +148,16 @@ class TableRowMisdesk extends Component {
 
         <td>
           {UserDetails.IsAdmin ? <button onClick={this.openModal} className="btn btn-primary">Edit</button> : ""}
-          <Modal className="modelbody"
+          <Modal className="modelbodymisdes"
             isOpen={this.state.modalIsOpen}
             onRequestClose={this.closeModal}
             contentLabel="Register Modal"
           >
-            <form onSubmit={this.onSubmit} className="deskform">
+            <form onSubmit={this.onSubmit} className="tablerowmisdes">
             <div>
               <label className="name">Asset_Number: </label>
               <input type="text"
-                className="width"
+                className="rmdwidth1"
                 defaultValue={this.props.obj.Asset_Number}
                 onChange={this.onChangeAsset_Number}
               />
@@ -164,7 +165,7 @@ class TableRowMisdesk extends Component {
             <div>
               <label className="name"> Desktop: </label>
               <input type="text"
-                className="width"
+                className="rmdwidth2"
                 defaultValue={this.props.obj.Desktop}
                 onChange={this.onChangeDesktop}
               />
@@ -172,13 +173,15 @@ class TableRowMisdesk extends Component {
             <div>
               <label className="name"> MAC_Address:</label>
               <input type="text"
-                className="width"
+                className="rmdwidth3"
                 defaultValue={this.props.obj.MAC_Address}
                 onChange={this.onChangeMAC_Address}
               />
             </div>
             <div>
+             
             <label className="name">Accessories: </label>
+            <div className="box1">
             <div className="form-check">
               <label className="form-check-label">
                 <input type="checkbox"
@@ -213,15 +216,15 @@ class TableRowMisdesk extends Component {
             <div>
               <label className="name">Comment:</label>
               <input type="text"
-                className="width"
+                className="rmd1width4"
                 defaultValue={this.props.obj.Comment}
                 onChange={this.Comment}
               />
             </div>
-            
+            </div>
             <div className="form-group">
-              <button type="submit" value="send" className="sendbta" onClick={this.onSubmit}>Update</button>
-              <button onClick={this.onHandleClicksCancel} type="button" className="resetbta">Cancel</button>
+              <button type="submit" value="send" className="misdessendbta" onClick={this.onSubmit}>Update</button>
+              <button onClick={this.onHandleClicksCancel} type="button" className="misdesresetbta">Cancel</button>
             </div>
           </form>
           </Modal>

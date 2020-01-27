@@ -125,8 +125,8 @@ class LaptopTable extends Component {
               />
             </div>
             <div className="form-group">
-              <button type="submit" value="send" className="sendbta" onClick={this.onSubmit}>Send</button>
-              <button onClick={this.onHandleClicksCancel} type="button" className="resetbta">cancel</button>
+              <button type="submit" value="send" className="lapsendbta" onClick={this.onSubmit}>Send</button>
+              <button onClick={this.onHandleClicksCancel} type="button" className="lapresetbta">cancel</button>
             </div>
           </form>
         </div>

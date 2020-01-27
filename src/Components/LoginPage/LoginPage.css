@@ -33,10 +33,23 @@
      color:black;
  }
  #cn{
-     margin-left: 30px;
-     color: blue;
- }
+    background-color:lightseagreen;
+    color:blue;
+    border-radius: 50px;
+    height: 44px;
+    width: 100px;
+    border: 2px solid white;
+}
+#cn:hover{
+   background-color: darkslategray;
+   color: white;
+}
  #ww{
      margin-left: 55px;
      color:brown;
+ }
+ #fp{
+     color:brown;
+     margin-left: 20px;
+     /* margin-bottom: -20px; */
  }

@@ -4,6 +4,7 @@ import axios from 'axios';
 import BrowserHistory from '../Utils/BrowserHistory';
 import { questionHandle } from '../../Action/MisLapAction'
 import { connect } from 'react-redux';
+import "./MisLapTable.css";
 
 class MiscellaneousLaptopTable extends Component {
   constructor(props) {
@@ -63,12 +64,12 @@ class MiscellaneousLaptopTable extends Component {
     return (
       <div >
 
-        <div className="desktopimg" style={{ marginTop: 10 }}>
-          <form onSubmit={this.onSubmit} className="deskform">
+        <div className="mislaptopimg" style={{ marginTop: 10 }}>
+          <form onSubmit={this.onSubmit} className="mislapform">
             <div>
               <label className="name">Asset_Number: </label>
               <input type="text"
-                className="width"
+                className="mislapwidth1"
                 value={this.state.Asset_Number}
                 onChange={this.onChangeAsset_Number}
               />
@@ -77,7 +78,7 @@ class MiscellaneousLaptopTable extends Component {
             <div>
               <label className="name"> MAC_Address:</label>
               <input type="text"
-                className="width"
+                className="mislapwidth2"
                 value={this.state.MAC_Address}
                 onChange={this.onChangeMAC_Address}
               />
@@ -85,7 +86,7 @@ class MiscellaneousLaptopTable extends Component {
             <div>
               <label className="name"> ChargerAsset_Number: </label>
               <input type="text"
-                className="width"
+                className="mislapwidth3"
                 value={this.state.ChargerAsset_Number}
                 onChange={this.onChangeChargerAsset_Number}
               />
@@ -93,15 +94,15 @@ class MiscellaneousLaptopTable extends Component {
             <div>
               <label className="name"> Comment: </label>
               <input type="text"
-                className="width"
+                className="mislapwidth4"
                 value={this.state.Comment}
                 onChange={this.onChangeComment}
               />
             </div>
 
             <div className="form-group">
-              <button type="submit" value="send" className="sendbta" onClick={this.onSubmit}>Send</button>
-              <button onClick={this.onHandleClicksCancel} type="button" className="resetbta">Cancel</button>
+              <button type="submit" value="send" className="mislapsendbta" onClick={this.onSubmit}>Send</button>
+              <button onClick={this.onHandleClicksCancel} type="button" className="mislapresetbta">Cancel</button>
             </div>
           </form>
         </div>
