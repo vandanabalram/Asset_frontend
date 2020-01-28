@@ -43,7 +43,7 @@ class MiscellaneousDesktopForm extends Component {
     return (
       <div className="misdesktoptable">
         <DpNavbar/>
-        <p className="misdesk">InventoryDesktop_List</p>
+        <p className="misdesk">InventoryDesktop-List</p>
         {UserDetails.IsAdmin ? <button className="misdescrtbtn" onClick={this.onHandleClicks}>Create</button> : ""}
         <table className="table table-striped" style={{ marginTop: 60 }}>
           <thead>

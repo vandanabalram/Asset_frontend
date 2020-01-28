@@ -42,7 +42,7 @@ class MiscellaneousLaptopForm extends Component {
     return (
       <div className="mislaptoptable">
         <DpNavbar/>
-        <p className="mislap">MiscellaneousLaptop List</p>
+        <p className="mislap">InventoryLaptop-List</p>
         {UserDetails.IsAdmin ? <button className="mislapcrtbtn" onClick={this.onHandleClicks}>Create</button> : ""}
         <table className="table table-striped" style={{ marginTop: 60 }}>
           <thead>

@@ -6,8 +6,7 @@
     height: 600px;
     width: 1300px;
     padding: 0;
-    margin-top: 70px;
-    
+    margin-top: 70px;  
 }
 .deskform{
     margin-left: 40%;
@@ -16,8 +15,7 @@
 .name{
     color: darkred;
 }
-
-  .dessendbta{
+.dessendbta{
     background-color: lightseagreen;
     color:blue;
     border-radius: 50px;
@@ -26,14 +24,12 @@
     border: 2px solid white;
     margin-top: 25px;
 
-  }
-  .dessendbta:hover{
+}
+.dessendbta:hover{
     background-color: darkslategray;
     color: white;
- }
-
-
-  .desresetbta{
+}
+.desresetbta{
     background-color: lightseagreen;
     color:blue;
     border-radius: 50px;
@@ -42,46 +38,41 @@
     border: 2px solid white;
     margin-left: 100px;
     margin-top: 25px;
-  }
-  .desresetbta:hover{
+}
+.desresetbta:hover{
     background-color: darkslategray;
     color: white;
- }
- .deswidth1{
+}
+.deswidth1{
   width: 232px;
   height: 25px;
   border: cornsilk;
   margin-left: 39px;
-
- }
- .deswidth2{
+}
+.deswidth2{
   width: 232px;
   height:25px;
   border: cornsilk;
   margin-left: 24px;
-
- }
- .deswidth3{
+}
+.deswidth3{
   width: 232px;
   height: 25px;
   border: cornsilk;
   margin-left: 90px;
-
- }
- .deswidth4{
+}
+.deswidth4{
   width: 232px;
   height:25px;
   border: cornsilk;
   margin-left: 32px;
-
- }
- .deswidth5{
+}
+.deswidth5{
   width: 232px;
   height: 25px;
   border: cornsilk;
   margin-left: 62px;
-
- }
+}
 
 
 

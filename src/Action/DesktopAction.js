@@ -17,9 +17,9 @@ export function questionHandle(payload) {
 }
 
 export function updateHandle(payload) {
-console.log(payload._id)
+  console.log(payload._id)
   const options = {
-    url: "http://localhost:3001/Desktop/"+payload._id,
+    url: "http://localhost:3001/Desktop/" + payload._id,
     method: 'PUT',
     data: payload
   };

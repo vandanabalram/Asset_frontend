@@ -3,49 +3,43 @@
     border:1px solid black;
     margin-left: 325px;
     margin-top: 50px;
-    background-color:#636363;
-  }
+    background-color:#E0EAFC;
+}
 .tablerowdes{
   margin-top: 50px;
   margin-left: 50px;
 }
-
 .rdwidth1{
   width: 232px;
   height: 25px;
   border: cornsilk;
   margin-left: 39px;
-
- }
- .rdwidth2{
+}
+.rdwidth2{
   width: 232px;
   height:25px;
   border: cornsilk;
   margin-left: 24px;
-
- }
- .rdwidth3{
+}
+.rdwidth3{
   width: 232px;
   height: 25px;
   border: cornsilk;
   margin-left: 90px;
-
- }
- .rdwidth4{
+}
+.rdwidth4{
   width: 232px;
   height:25px;
   border: cornsilk;
   margin-left: 32px;
-
- }
- .rdwidth5{
+}
+.rdwidth5{
   width: 232px;
   height: 25px;
   border: cornsilk;
   margin-left: 61px;
-
- }
- .rdsendbta{
+}
+.rdsendbta{
   background-color: lightseagreen;
   color:blue;
   border-radius: 50px;
@@ -54,14 +48,11 @@
   border: 2px solid white;
   margin-top: 25px;
   margin-left: 89px;
-
 }
 .rdsendbta:hover{
   background-color: darkslategray;
   color: white;
 }
-
-
 .rdresetbta{
   background-color: lightseagreen;
   color:blue;

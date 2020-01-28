@@ -7,6 +7,7 @@ export function registerHandle(payload) {
     method: 'POST',
     data: payload
   };
+  
   return function (dispatch) {
     axios(options)
       .then(response => {
@@ -23,6 +24,7 @@ export function GetUserDetailsById(UserId) {
     method: 'GET',
     data: ''
   };
+  
   return function (dispatch) {
     axios(options)
       .then(response => {

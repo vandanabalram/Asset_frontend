@@ -4,14 +4,12 @@ export function loginHandle(payload) {
   const options = {
     url: 'http://localhost:3001/Signin',
     method: 'POST',
-
     data: payload
   };
 
   return function (dispatch) {
     axios(options)
       .then(response => {
-
         if (response.data === "User does not exist") {
           alert("User does not exist")
         }
@@ -21,10 +19,8 @@ export function loginHandle(payload) {
         else {
           const LoginDet = JSON.stringify({ 'token': response.data.token, 'userId': response.data.userId });
           localStorage.setItem('LOGINDETAILS', LoginDet);
-          sessionStorage.setItem('email', response.data.email)
           BrowserHistory.push('./dashboard')
         }
       });
-
   }
 }

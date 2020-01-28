@@ -33,10 +33,12 @@ window.location.reload();
 render() {
 
 return (
+    <div className="forgetimg">
 <div className="forgetpassword">
-<label>New Password</label><br/>
+<label><b className="new">New Password</b></label><br/>
 <input type="text" onChange={this.handlechange} placeholder="enter new password"></input><br/>
 <button onClick={this.changepassw} name="password" className="btn btn-danger">change password</button>
+</div>
 </div>
 )
 }

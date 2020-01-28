@@ -13,10 +13,9 @@ class DesktopForm extends Component {
     this.state = { Users: [] };
   }
   onHandleClicks = (e) => {
-
     BrowserHistory.push('/desktoptable');
-
   }
+
   componentDidMount() {
     axios.get('http://localhost:3001/Desktop')
       .then(response => {
@@ -25,10 +24,10 @@ class DesktopForm extends Component {
       .catch(function (error) {
         console.log(error);
       })
+
     const LoginDetails = (localStorage.getItem('LOGINDETAILS'));
     const LogDet = JSON.parse(LoginDetails);
     this.props.GetUserDetailsById(LogDet.userId);
-    
   }
 
   tabRow() {
@@ -41,10 +40,9 @@ class DesktopForm extends Component {
     const { UserDetails } = this.props;
     return (
       <div className="desktoptable">
-        <DpNavbar/>
+        <DpNavbar />
         <p className="desk"><b>Desktop List</b></p>
         {UserDetails.IsAdmin ? <button className="crtbtn" onClick={this.onHandleClicks} >Create</button> : ""}
-
         <table className="table table-striped" style={{ marginTop: 60 }}>
           <thead>
             <tr>
@@ -64,10 +62,12 @@ class DesktopForm extends Component {
     );
   }
 }
+
 const mapStateToProps = (state) => {
   const { UserDetails } = state.Registerreducer
   return { UserDetails }
 }
+
 export default connect(mapStateToProps, { GetUserDetailsById })(DesktopForm);
 
 

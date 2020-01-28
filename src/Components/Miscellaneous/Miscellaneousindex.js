@@ -17,7 +17,7 @@ class Miscellaneousindex extends Component {
         <div className="misimg">
           <button onClick={this.onHandleClicksone} className="deskbtn" type="submit" >Inventory_Desktop</button>
           <button onClick={this.onHandleClickstwo} className="lapbtn" type="submit" >Inventory_Laptop</button>
-          <h1 className="inven">INVENTORY</h1>
+          <h1 className="inven">INVENTORY-LIST</h1>
         </div>
      
         

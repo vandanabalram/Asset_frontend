@@ -14,9 +14,10 @@ class DesktopTable extends Component {
       Asset_Number: '',
       Name: '',
       MAC_Address: '',
-      Comment: ''
+      Comment: '',
     }
   }
+
   handleChangeg = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   }
@@ -59,6 +60,7 @@ class DesktopTable extends Component {
       Name: this.state.Name,
       MAC_Address: this.state.MAC_Address,
       Comment: this.state.Comment,
+
     };
 
     this.props.questionHandle(payload);
