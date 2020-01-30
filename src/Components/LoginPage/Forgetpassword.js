@@ -12,12 +12,10 @@ class Forgetpassword extends Component {
   }
 
   handlechange = (e) => {
-    debugger
     this.setState({ password: e.target.value })
   }
 
   changepassw = () => {
-    debugger
     const payload = {
       email: sessionStorage.getItem('change'),
       password: this.state.password

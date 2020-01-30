@@ -4,7 +4,7 @@
 }
 .backgrnd{
   width:1315px;
-  height:420px;
+  height:450px;
 }
 .welcome { 
   position: absolute;
@@ -12,7 +12,11 @@
   padding-left: 209px;
   font-size: 45px;
 }
-p{
+h2{
+  position: absolute;
+  bottom:300px;
+  padding-left: 209px;
+  font-size: 45px;
   position: relative;
   font-family: sans-serif;
   text-transform: uppercase;

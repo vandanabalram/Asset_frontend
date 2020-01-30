@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import BrowserHistory from '../Utils/BrowserHistory'
 import { loginHandle } from '../../Action/Loginaction';
 import './LoginPage.css';
+
 class LoginPage extends Component {
   constructor(props) {
     super(props);

@@ -50,7 +50,7 @@ class DesktopForm extends Component {
               <th className="emp">Employee_Id</th>
               <th className="emp">Asset_Number</th>
               <th className="emp">Name</th>
-              <th className="emp">MAC_Address</th>
+              <th className="emp">IP_Address</th>
               <th className="emp">Comment</th>
               <th className="emp" colSpan="2">Action</th>
             </tr>

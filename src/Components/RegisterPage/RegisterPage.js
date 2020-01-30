@@ -44,7 +44,7 @@ class RegisterPage extends Component {
       Mobnum: this.state.Mobnum
     }
 
-    if (this.state.Firstname.length === 0 && this.state.Lastname.length === 0 && this.state.email.length === 0 && this.state.password.length === 0 && this.state.Confirmpassword.length === 0 && this.state.Mobnum.length === 0) {
+    if (this.state.Firstname.length === 0 && this.state.Lastname.length === 0 && this.state.email.length === 0 && this.state.password.length === 0 && this.state.Mobnum.length === 0) {
       this.setState({
         ferr: "Firstname is required",
         lerr: "Lastname is required",
@@ -61,13 +61,13 @@ class RegisterPage extends Component {
       this.setState({ lerr: "Lastname is required" })
     }
     else if (this.state.email.length === 0) {
-      this.setState({ uerr: "Username is required" })
+      this.setState({ uerr: "email is required" })
     }
     else if (this.state.password.length === 0) {
       this.setState({ perr: "Password is required" })
     }
     else if (this.state.Mobnum.length === 0) {
-      this.setState({ phnerr: "Password is required" })
+      this.setState({ phnerr: "mobilenumber is required" })
     }
 
     else if (!this.state.Firstname.match(/^[A-Za-z]{5,15}$/)) {

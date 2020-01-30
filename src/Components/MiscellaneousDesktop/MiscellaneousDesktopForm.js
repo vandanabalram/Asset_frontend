@@ -49,7 +49,7 @@ class MiscellaneousDesktopForm extends Component {
             <tr>
               <th className="misdeskemp">Asset_Number</th>
               <th className="misdeskemp">Desktop</th>
-              <th className="misdeskemp">MAC_Address</th>
+              <th className="misdeskemp">IP_Address</th>
               <th className="misdeskemp">Accessories</th>
               <th className="misdeskemp">Comment</th>
               <th className="misdeskemp" colSpan="2">Action</th>

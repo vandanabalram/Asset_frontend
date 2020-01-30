@@ -25,7 +25,6 @@ class DpNavbar extends Component {
   }
   render() {
     const { UserDetails } = this.props;
-    debugger;
     return (
       <div>
         <div className="row navbar">
@@ -34,7 +33,9 @@ class DpNavbar extends Component {
           </div>
           <div className="col-xs-1 col-sm-1 col-md-2 col-lg-1" >
           <img src={people} className="people"></img>
-          {localStorage.getItem('Firstname')}
+          </div>
+          <div>
+          <p className="fix-align">{localStorage.getItem('Firstname')}</p>
           </div>
           <div className="col-xs-1 col-sm-1 col-md-2 col-lg-1" >
             <button className="dashbtn" onClick={this.onHandleClickone} > Desktops</button>

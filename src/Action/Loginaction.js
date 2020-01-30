@@ -22,6 +22,18 @@ export function loginHandle(payload) {
           localStorage.setItem('Firstname', response.data.Firstname)
           BrowserHistory.push('./dashboard')
         }
-      });
+      })
+      .catch(error=>{
+         window.alert(error.response.data.message)
+         })    
   }
 }
+
+
+
+
+
+
+
+
+

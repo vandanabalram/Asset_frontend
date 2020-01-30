@@ -7,11 +7,11 @@ import DpNavbar from '../DpNavbar/DpNavbar';
 class Dashboardpage extends Component {
   render() {
     return (
-      <div>
+      <div className="backgrnd">
         <DpNavbar />
         <div>
           <img src={images} className="backgrnd"></img>
-          <p className="welcome">WELCOME TO COMPANY ASSETS LISTS</p>
+          <h2 className="welcome">WELCOME TO COMPANY ASSETS LISTS</h2>
         </div>
         <Footer />
       </div>
