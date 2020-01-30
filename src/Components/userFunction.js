@@ -1,4 +1,5 @@
 import axios from 'axios'
+
 export const signup = regUser => {
   return axios
     .post('Singup', {
@@ -13,6 +14,7 @@ export const signup = regUser => {
       console.log(res)
     })
 }
+
 export const login = user => {
   return axios
     .post('Signin', {

@@ -21,14 +21,14 @@ import Forgetpassword from './Components/LoginPage/Forgetpassword';
 
 const PrivateRoute = ({ component: IncomingComponent, ...rest }) => (
   <Route
-  {...rest}
-  render={props => ( 
-  (localStorage.getItem('LOGINDETAILS')) ? (<IncomingComponent {...props} />) : ( 
-  <Redirect to={{pathname: '/', state: { from: props.location }, }} />)
-  )
-  }
+    {...rest}
+    render={props => (
+      (localStorage.getItem('LOGINDETAILS')) ? (<IncomingComponent {...props} />) : (
+        <Redirect to={{ pathname: '/', state: { from: props.location }, }} />)
+    )
+    }
   />
-  );
+);
 
 export default class App extends Component {
   render() {
@@ -37,10 +37,9 @@ export default class App extends Component {
         <switch>
           <Route exact path='/' component={HomePage}></Route>
           <Route exact path='/dpnavbar' component={DpNavbar}></Route>
-
           <Route exact path='/login' component={LoginPage}></Route>
           <Route exact path='/register' component={RegisterPage}></Route>
-          <PrivateRoute exact path='/dashboard' component={Dashboardpage}></PrivateRoute>
+          {/* <PrivateRoute exact path='/dashboard' component={Dashboardpage}></PrivateRoute> */}
           <PrivateRoute exact path='/navbar' component={Navbar}></PrivateRoute>
           <PrivateRoute exact path='/footer' component={Footer}></PrivateRoute>
           <PrivateRoute exact path='/desktoptable' component={DesktopTable}></PrivateRoute>
@@ -53,12 +52,12 @@ export default class App extends Component {
           <PrivateRoute exact path='/miscellaneouslaptoptable' component={MiscellaneousLaptopTable}></PrivateRoute>
           <PrivateRoute exact path='/miscellaneouslaptopform' component={MiscellaneousLaptopForm}></PrivateRoute>
           <Route exact path='/forgetpassword' component={Forgetpassword}></Route>
+          <Route exact path='/dashboard' component={Dashboardpage}></Route>
+
 
         </switch>
       </Router>
-
     </div>
-
   }
 }
 

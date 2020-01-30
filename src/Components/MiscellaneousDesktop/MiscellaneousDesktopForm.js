@@ -39,11 +39,10 @@ class MiscellaneousDesktopForm extends Component {
 
   render() {
     const { UserDetails } = this.props;
-
     return (
       <div className="misdesktoptable">
-        <DpNavbar/>
-        <p className="misdesk">InventoryDesktop-List</p>
+        <DpNavbar />
+        <p className="misdesk"><b>InventoryDesktop-List</b></p>
         {UserDetails.IsAdmin ? <button className="misdescrtbtn" onClick={this.onHandleClicks}>Create</button> : ""}
         <table className="table table-striped" style={{ marginTop: 60 }}>
           <thead>

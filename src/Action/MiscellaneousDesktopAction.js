@@ -1,12 +1,11 @@
 import axios from 'axios'
-export function questionHandle(payload) {
 
+export function questionHandle(payload) {
   const options = {
     url: 'http://localhost:3001/MiscellaneousDesktop',
     method: 'POST',
     data: payload
   };
-
   return function (dispatch) {
     axios(options)
       .then(response => {
@@ -23,7 +22,6 @@ export function updateHandle(payload) {
     method: 'PUT',
     data: payload
   };
-
   return function (dispatch) {
     axios(options)
       .then(response => {

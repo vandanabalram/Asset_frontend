@@ -7,6 +7,12 @@
     border: 2px solid white;
 }
 .dashbtn:hover{
-   background-color: darkslategray;
-   color: white;
+    background-color: darkslategray;
+    color: white;
+}
+.people{
+    width:55px;
+    height:55px;
+    border-radius: 50% ;
+    margin-top: -3px;
 }

@@ -1,81 +1,71 @@
 .mislaptopimg{
-    background: url('./desk1.jpeg') no-repeat;
-    border:solid 1px cornsilk;
-    background-position: center;
-    background-size: cover;
-    height: 600px;
-    width: 1300px;
-    padding: 0;
-    margin-top: 70px;
-    
+  background: url('./desk1.jpeg') no-repeat;
+  border:solid 1px cornsilk;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  width: 1300px;
+  padding: 0;
+  margin-top: 70px;  
 }
 .mislapform{
-    margin-left: 40%;
-    margin-top: 10%;
+  margin-left: 40%;
+  margin-top: 10%;
 }
 .name{
-    color: darkred;
+  color: darkred;
 }
-
 .mislapsendbta{
-    background-color: lightseagreen;
-    color:blue;
-    border-radius: 50px;
-    height: 44px;
-    width: 110px;
-    border: 2px solid white;
-    margin-top: 25px;
-    
-
-  }
+  background-color: lightseagreen;
+  color:blue;
+  border-radius: 50px;
+  height: 44px;
+  width: 110px;
+  border: 2px solid white;
+  margin-top: 25px;
+}
 .mislapsendbta:hover{
-    background-color: darkslategray;
-    color: white;
- }
-
-
-  .mislapresetbta{
-    background-color: lightseagreen;
-    color:blue;
-    border-radius: 50px;
-    height: 44px;
-    width: 110px;
-    border: 2px solid white;
-    margin-left: 100px;
-    margin-top: 25px;
-  }
-  .mislapresetbta:hover{
-    background-color: darkslategray;
-    color: white;
- }
- .mislapwidth1{
+  background-color: darkslategray;
+  color: white;
+}
+.mislapresetbta{
+  background-color: lightseagreen;
+  color:blue;
+  border-radius: 50px;
+  height: 44px;
+  width: 110px;
+  border: 2px solid white;
+  margin-left: 100px;
+  margin-top: 25px;
+}
+.mislapresetbta:hover{
+  background-color: darkslategray;
+  color: white;
+}
+.mislapwidth1{
   width: 232px;
   height: 25px;
   border: cornsilk;
   margin-left: 64px;
-
- }
+}
  .mislapwidth2{
   width: 232px;
   height:25px;
   border: cornsilk;
   margin-left: 75px;
-
- }
+}
  .mislapwidth3{
   width: 232px;
   height: 25px;
   border: cornsilk;
   margin-left: 10px;
-
- }
+}
  .mislapwidth4{
   width: 232px;
   height:25px;
   border: cornsilk;
   margin-left: 106px;
-
- }
+}
  
 
 

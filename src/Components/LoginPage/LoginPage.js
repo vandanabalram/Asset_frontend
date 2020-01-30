@@ -13,16 +13,19 @@ class LoginPage extends Component {
       perr: '',
     };
   }
+
   onHandleChange = (event) => {
     this.setState({ [event.target.name]: event.target.value });
   }
+
   onHandleClick = (e) => {
     BrowserHistory.push('/login');
   }
-  confirmmail=(e)=>{
-    sessionStorage.setItem('change',this.state.email)
+  
+  confirmmail = (e) => {
+    sessionStorage.setItem('change', this.state.email)
     BrowserHistory.push('/forgetpassword');
-}
+  }
 
   onHandleClicksCancel = (e) => {
     BrowserHistory.push('/');
@@ -34,8 +37,6 @@ class LoginPage extends Component {
       email: this.state.email,
       password: this.state.password,
     }
-
-    
 
     if (this.state.email.length === 0 && this.state.password.length === 0) {
       this.setState({
@@ -61,7 +62,6 @@ class LoginPage extends Component {
     this.props.loginHandle(payload);
   }
 
-
   render() {
     return (
       <div className="login">
@@ -71,17 +71,14 @@ class LoginPage extends Component {
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4 frm">
               <h1><b id="ww">SIGNIN</b></h1>
               <div className="regcont">
-
-
                 <div><label ><b>Email</b></label><br /></div>
                 <div> <input placeholder="email" type="text" name="email" className="input_box" onChange={this.onHandleChange} /><br /></div>
                 <div> <p >{this.state.uerr}</p></div>
                 <div><label ><b>Password</b></label><br /></div>
                 <div> <input placeholder="password" type="password" name="password" className="input_box" onChange={this.onHandleChange} /><br /><br /></div>
                 <div> <p >{this.state.perr}</p></div>
-                <div><a id="fp" onClick={this.confirmmail} className="forgetpassword"><b>Forget Password</b></a></div>
-              </div>
-
+                </div> 
+                 <div><a id="fp" onClick={this.confirmmail} className="forgetpassword"><b>Forget Password</b></a></div> 
               <button onClick={this.onHandleClick} className="lgbtn"><b>Signin</b></button>
               <button id="cn" href="" onClick={this.onHandleClicksCancel}>Cancel</button>
             </div>

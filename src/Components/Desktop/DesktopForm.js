@@ -12,6 +12,7 @@ class DesktopForm extends Component {
     super(props);
     this.state = { Users: [] };
   }
+
   onHandleClicks = (e) => {
     BrowserHistory.push('/desktoptable');
   }

@@ -1,12 +1,12 @@
 import axios from 'axios'
 import BrowserHistory from '../Components/Utils/BrowserHistory'
+
 export function loginHandle(payload) {
   const options = {
     url: 'http://localhost:3001/Signin',
     method: 'POST',
     data: payload
   };
-
   return function (dispatch) {
     axios(options)
       .then(response => {
@@ -19,6 +19,7 @@ export function loginHandle(payload) {
         else {
           const LoginDet = JSON.stringify({ 'token': response.data.token, 'userId': response.data.userId });
           localStorage.setItem('LOGINDETAILS', LoginDet);
+          localStorage.setItem('Firstname', response.data.Firstname)
           BrowserHistory.push('./dashboard')
         }
       });

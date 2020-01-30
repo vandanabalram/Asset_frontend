@@ -38,8 +38,8 @@ class LaptopForm extends Component {
     const { UserDetails } = this.props;
     return (
       <div className="desktoptable">
-        <DpNavbar/>
-        <p className="desk">Laptop List</p>
+        <DpNavbar />
+        <p className="desk"><b>Laptop List</b></p>
         {UserDetails.IsAdmin ? <button className="crtbtn" onClick={this.onHandleClicks} >Create</button> : ""}
         <table className="table table-striped" style={{ marginTop: 20 }}>
           <thead>
@@ -50,7 +50,7 @@ class LaptopForm extends Component {
               <th className="emp">MAC_Address</th>
               <th className="emp">ChargerAsset_Number</th>
               <th className="emp">Comment</th>
-              <th  className="emp" colSpan="2">Action</th>
+              <th className="emp" colSpan="2">Action</th>
             </tr>
           </thead>
           <tbody>

@@ -8,19 +8,12 @@
 .label{
     color: #293a21;
 }
-/* .regbtn{
-    background-color: lightseagreen;
-    color: rgb(33, 15, 136);
-    border: 2px solid wheat;
-
-} */
 .signup{
     color: brown;
     margin-left: 50px;
 }
 .already{
     color: #293a21;
-
 }
 #acct{
     color: red;
@@ -44,18 +37,18 @@
 }
 .input_box {
     margin: 2px;
-   color: white;
-     width: 100%;
-     margin-bottom: 10px;
-     height: 40px;
-     font-weight: bold;
-     background-color:#775c6c;
-     font-family: sans-serif;
- } 
+    color: white;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+    font-weight: bold;
+    background-color:#775c6c;
+    font-family: sans-serif;
+} 
  .input_box:hover{
-     -webkit-transform: scale(1.1);
-     -ms-transform: scale(1.1);
-     transform: scale(1.1);
-     background-color:rgb(190, 196, 192);
-     color:black;
- }
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color:rgb(190, 196, 192);
+    color:black;
+}

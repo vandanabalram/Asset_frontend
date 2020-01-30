@@ -3,11 +3,9 @@ import axios from 'axios';
 import { GetUserDetailsById } from '../../Action/Registeraction';
 import { connect } from 'react-redux';
 import Modal from 'react-modal';
-// import DesktopTable from './DesktopTable';
 import './TableRowMisLap.css';
 import { updateHandle } from '../../Action/MisLapAction';
 import BrowserHistory from '../Utils/BrowserHistory';
-
 
 class TableRowMisLap extends Component {
   constructor(props) {
@@ -17,17 +15,17 @@ class TableRowMisLap extends Component {
       modalIsOpen: false,
       Asset_Number: '',
       MAC_Address: '',
-      ChargerAsset_Number:'',
+      ChargerAsset_Number: '',
       Comment: '',
-      _id:'',
-
+      _id: '',
     };
     this.delete = this.delete.bind(this);
-
   }
+
   handleChangeg = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   }
+
   onChangeAsset_Number = (e) => {
     console.log(e.target.value)
     this.setState({
@@ -40,6 +38,7 @@ class TableRowMisLap extends Component {
       MAC_Address: e.target.value
     })
   }
+
   onChangeChargerAsset_Number = (e) => {
     this.setState({
       ChargerAsset_Number: e.target.value
@@ -58,6 +57,7 @@ class TableRowMisLap extends Component {
       .catch(err => console.log(err))
     window.location.reload();
   }
+
   openModal = () => {
     console.log(this.props.obj._id)
     this.setState({ Asset_Number: this.props.obj.Asset_Number })
@@ -65,7 +65,6 @@ class TableRowMisLap extends Component {
     this.setState({ ChargerAsset_Number: this.props.obj.ChargerAsset_Number })
     this.setState({ Comment: this.props.obj.Comment })
     this.setState({ _id: this.props.obj._id })
-
     this.setState({ modalIsOpen: true });
     console.log("hi", this.state)
   }
@@ -73,7 +72,6 @@ class TableRowMisLap extends Component {
   closeModal = () => {
     this.setState({ modalIsOpen: false });
   }
-
 
   componentDidMount() {
     const LoginDetails = (localStorage.getItem('LOGINDETAILS'));
@@ -87,7 +85,7 @@ class TableRowMisLap extends Component {
 
   onSubmit = (e) => {
     e.preventDefault();
-    console.log("hi",this.state._id)
+    console.log("hi", this.state._id)
     const payload = {
       _id: this.state._id,
       Asset_Number: this.state.Asset_Number,
@@ -95,7 +93,7 @@ class TableRowMisLap extends Component {
       ChargerAsset_Number: this.state.ChargerAsset_Number,
       Comment: this.state.Comment,
     };
-console.log(payload);
+    console.log(payload);
     this.props.updateHandle(payload);
     BrowserHistory.push('./miscellaneouslaptopform');
   }
@@ -105,7 +103,6 @@ console.log(payload);
 
   render() {
     const { UserDetails } = this.props;
-
     return (
       <tr>
         <td>
@@ -128,7 +125,6 @@ console.log(payload);
             contentLabel="Register Modal"
           >
             <form onSubmit={this.onSubmit} className="tablerowmislap">
-             
               <div>
                 <label className="name">Asset_Number: </label>
                 <input type="text"
@@ -137,7 +133,6 @@ console.log(payload);
                   onChange={this.onChangeAsset_Number}
                 />
               </div>
-              
               <div>
                 <label className="name"> MAC_Address:</label>
                 <input type="text"
@@ -158,7 +153,6 @@ console.log(payload);
                 <label className="name"> Comment:</label>
                 <input type="text"
                   className="rmlwidth4"
-
                   defaultValue={this.props.obj.Comment}
                   onChange={this.onChangeComment}
                 />
@@ -168,14 +162,12 @@ console.log(payload);
                 <button onClick={this.onHandleClicksCancel} type="button" className="mislapresetbta">Cancel</button>
               </div>
             </form>
-
           </Modal>
         </td>
         <td>
           {UserDetails.IsAdmin ? <button onClick={this.delete} className="btn btn-danger">Delete</button> : ""}
         </td>
       </tr>
-
     );
   }
 }

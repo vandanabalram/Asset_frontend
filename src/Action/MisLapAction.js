@@ -6,7 +6,6 @@ export function questionHandle(payload) {
     method: 'POST',
     data: payload
   };
-
   return function (dispatch) {
     axios(options)
       .then(response => {
@@ -23,7 +22,6 @@ export function updateHandle(payload) {
     method: 'PUT',
     data: payload
   };
-
   return function (dispatch) {
     axios(options)
       .then(response => {

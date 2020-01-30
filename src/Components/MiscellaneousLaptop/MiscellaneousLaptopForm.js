@@ -12,13 +12,12 @@ class MiscellaneousLaptopForm extends Component {
     super(props);
     this.state = { Users: [] };
   }
+
   onHandleClicks = (e) => {
-
     BrowserHistory.push('/miscellaneouslaptoptable');
-
   }
-  componentDidMount() {
 
+  componentDidMount() {
     axios.get('http://localhost:3001/MiscellaneousLaptop')
       .then(response => {
         this.setState({ Users: response.data });
@@ -38,11 +37,10 @@ class MiscellaneousLaptopForm extends Component {
 
   render() {
     const { UserDetails } = this.props;
-
     return (
       <div className="mislaptoptable">
-        <DpNavbar/>
-        <p className="mislap">InventoryLaptop-List</p>
+        <DpNavbar />
+        <p className="mislap"><b>InventoryLaptop-List</b></p>
         {UserDetails.IsAdmin ? <button className="mislapcrtbtn" onClick={this.onHandleClicks}>Create</button> : ""}
         <table className="table table-striped" style={{ marginTop: 60 }}>
           <thead>
@@ -52,7 +50,6 @@ class MiscellaneousLaptopForm extends Component {
               <th className="mislapemp">ChargerAsset_Number</th>
               <th className="mislapemp">Comment</th>
               <th className="mislapemp" colSpan="2">Action</th>
-
             </tr>
           </thead>
           <tbody>

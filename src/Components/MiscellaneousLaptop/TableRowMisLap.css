@@ -1,45 +1,39 @@
 .modelbodymislap{
-    width:600px;
-    border:1px solid black;
-    margin-left: 325px;
-    margin-top: 100px;
-    background-color:#E0EAFC;
-  }
-  .tablerowmislap{
+  width:600px;
+  border:1px solid black;
+  margin-left: 325px;
+  margin-top: 100px;
+  background-color:#E0EAFC;
+}
+.tablerowmislap{
   margin-top: 50px;
   margin-left: 50px;
-  }
-  
-  .rmlwidth1{
+}
+.rmlwidth1{
   width: 232px;
   height: 25px;
   border: cornsilk;
   margin-left: 66px;
-  
-  }
-  .rmlwidth2{
+}
+.rmlwidth2{
   width: 232px;
   height:25px;
   border: cornsilk;
   margin-left: 73px;
-  
-  }
-  .rmlwidth3{
+}
+.rmlwidth3{
   width: 232px;
   height: 25px;
   border: cornsilk;
   margin-left: 10px;
-  
-  }
-  .rmlwidth4{
+}
+.rmlwidth4{
   width: 232px;
   height:25px;
   border: cornsilk;
   margin-left: 106px;
-  
-  }
-  
-  .mislapsendbta{
+}
+.mislapsendbta{
   background-color: lightseagreen;
   color:blue;
   border-radius: 50px;
@@ -48,15 +42,12 @@
   border: 2px solid white;
   margin-top: 25px;
   margin-left: 132px;
-  
-  }
-  .mislapsendbta:hover{
+}
+.mislapsendbta:hover{
   background-color: darkslategray;
   color: white;
-  }
-  
-  
-  .mislapresetbta{
+}
+.mislapresetbta{
   background-color: lightseagreen;
   color:blue;
   border-radius: 50px;
@@ -65,9 +56,9 @@
   border: 2px solid white;
   margin-left: 100px;
   margin-top: 25px;
-  }
-  .mislapresetbta:hover{
+}
+.mislapresetbta:hover{
   background-color: darkslategray;
   color: white;
-  }
+}
   

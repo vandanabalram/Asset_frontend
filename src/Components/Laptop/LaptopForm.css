@@ -1,28 +1,26 @@
 .desk{
-    color:#e63b3bb8;
-    font-size: 40px;
-    margin-left: 497px;
-    font-style: italic;
-  }
-  .desktoptable{
-    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);  
-  }
-  
-  .crtbtn{
-    background-color: lightseagreen;
-    color: brown;
-    border-radius: 50px;
-    height: 45px;
-    width: 163px;
-    border: 2px solid white;
-    margin-left: 519px;
-  }
-  .crtbtn:hover{
-   background-color: darkslategray;
-   color: white;
-  }
-  
-  .emp{
+  color:#e63b3bb8;
+  font-size: 40px;
+  margin-left: 497px;
+  font-style: italic;
+}
+.desktoptable{
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);  
+}
+.crtbtn{
+  background-color: lightseagreen;
+  color: brown;
+  border-radius: 50px;
+  height: 45px;
+  width: 163px;
+  border: 2px solid white;
+  margin-left: 519px;
+}
+.crtbtn:hover{
+  background-color: darkslategray;
+  color: white;
+}
+.emp{
     color:#e63b3bb8 ;
-  }
+}
   

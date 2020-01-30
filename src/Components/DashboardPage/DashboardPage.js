@@ -11,7 +11,7 @@ class Dashboardpage extends Component {
         <DpNavbar />
         <div>
           <img src={images} className="backgrnd"></img>
-          <h2 className="welcome">WELCOME TO COMPANY ASSETS LISTS</h2>
+          <p className="welcome">WELCOME TO COMPANY ASSETS LISTS</p>
         </div>
         <Footer />
       </div>

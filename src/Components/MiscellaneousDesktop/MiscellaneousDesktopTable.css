@@ -1,84 +1,75 @@
 .misdesktopimg{
-    background: url('./desk1.jpeg') no-repeat;
-    border:solid 1px cornsilk;
-    background-position: center;
-    background-size: cover;
-    height: 600px;
-    width: 1300px;
-    padding: 0;
-    margin-top: 70px;
-    
+  background: url('./desk1.jpeg') no-repeat;
+  border:solid 1px cornsilk;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  width: 1300px;
+  padding: 0;
+  margin-top: 70px;   
 }
 .misdeskform{
-    margin-left: 40%;
-    margin-top: 10%;
+  margin-left: 40%;
+  margin-top: 10%;
 }
 .name{
-    color: darkred;
+  color: darkred;
 }
-
-  .misdessendbta{
-    background-color: lightseagreen;
-    color:blue;
-    border-radius: 50px;
-    height: 44px;
-    width: 110px;
-    border: 2px solid white;
-    margin-top: 25px;
-
-  }
-  .misdessendbta:hover{
-    background-color: darkslategray;
-    color: white;
- }
-
-
-  .misdesresetbta{
-    background-color: lightseagreen;
-    color:blue;
-    border-radius: 50px;
-    height: 44px;
-    width: 110px;
-    border: 2px solid white;
-    margin-left: 100px;
-    margin-top: 25px;
-  }
-  .misdesresetbta:hover{
-    background-color: darkslategray;
-    color: white;
- }
- .misdeswidth1{
+.misdessendbta{
+  background-color: lightseagreen;
+  color:blue;
+  border-radius: 50px;
+  height: 44px;
+  width: 110px;
+  border: 2px solid white;
+  margin-top: 25px;
+}
+.misdessendbta:hover{
+  background-color: darkslategray;
+  color: white;
+}
+.misdesresetbta{
+  background-color: lightseagreen;
+  color:blue;
+  border-radius: 50px;
+  height: 44px;
+  width: 110px;
+  border: 2px solid white;
+  margin-left: 100px;
+  margin-top: 25px;
+}
+.misdesresetbta:hover{
+  background-color: darkslategray;
+  color: white;
+}
+.misdeswidth1{
   width: 232px;
   height: 25px;
   border: cornsilk;
   margin-left: 39px;
-
- }
- .misdeswidth2{
+}
+.misdeswidth2{
   width: 232px;
   height:25px;
   border: cornsilk;
   margin-left: 86px;
-
- }
- .misdeswidth3{
+}
+.misdeswidth3{
   width: 232px;
   height: 25px;
   border: cornsilk;
   margin-left: 46px;
-
- }
- .misdeswidth4{
+}
+.misdeswidth4{
   width: 232px;
   height:25px;
   border: cornsilk;
   margin-left: 75px;
-
- }
- .box{
-   margin-left: 150px ;
-   margin-top: -30px;
- }
+}
+.box{
+  margin-left: 150px ;
+  margin-top: -30px;
+}
 
  
 

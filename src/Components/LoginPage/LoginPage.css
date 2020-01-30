@@ -1,5 +1,4 @@
 .login{
-    /* background: rgba(147,206,222,1); */
     height:640px;
 }
 .lgbtn{
@@ -11,28 +10,27 @@
     border: 2px solid white;
 }
 .lgbtn:hover{
-   background-color: darkslategray;
-   color: white;
+    background-color: darkslategray;
+    color: white;
 }
 .input_box {
     margin: 2px;
     color: white;
-     width: 100%;
-     margin-bottom: 10px;
-     height: 40px;
-     font-weight: bold;
-     background-color:#775c6c;
-
-     font-family: sans-serif;
- } 
- .input_box:hover{
-     -webkit-transform: scale(1.1);
-     -ms-transform: scale(1.1);
-     transform: scale(1.1);
-     background-color:rgb(190, 196, 192);
-     color:black;
- }
- #cn{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+    font-weight: bold;
+    background-color:#775c6c;
+    font-family: sans-serif;
+} 
+.input_box:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color:rgb(190, 196, 192);
+    color:black;
+}
+#cn{
     background-color:lightseagreen;
     color:blue;
     border-radius: 50px;
@@ -41,15 +39,14 @@
     border: 2px solid white;
 }
 #cn:hover{
-   background-color: darkslategray;
-   color: white;
+    background-color: darkslategray;
+    color: white;
 }
- #ww{
-     margin-left: 55px;
-     color:brown;
- }
- #fp{
-     color:brown;
-     margin-left: 20px;
-     /* margin-bottom: -20px; */
- }
+#ww{
+    margin-left: 55px;
+    color:brown;
+}
+#fp{
+    color:brown;
+    margin-left: 20px;  
+}

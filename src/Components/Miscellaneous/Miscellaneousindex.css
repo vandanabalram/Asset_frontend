@@ -14,15 +14,11 @@
     height: 45px;
     width: 643px;
     border: 2px solid white;
-    
 }
 .deskbtn:hover{
     background-color: darkslategray;
     color: white;
-   }
-   
-
-
+}
 .lapbtn{
     background-color: lightseagreen;
     color: brown;
@@ -30,13 +26,11 @@
     height: 45px;
     width:  643px;
     border: 2px solid white;
-   
 }
 .lapbtn:hover{
     background-color: darkslategray;
     color: white;
-   }
-
+}
 .inven{
     color:red;
     font-size: 50px;

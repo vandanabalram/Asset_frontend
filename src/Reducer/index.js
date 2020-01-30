@@ -4,7 +4,6 @@ import Desktopreducer from './Desktopreducer'
 import MiscellaneousDesktopreducer from './MiscellaneousDesktopreducer'
 import MisLapreducer from './MisLapreducer'
 import Laptopreducer from './Laptopreducer'
-
 import { combineReducers } from 'redux';
 
 export default combineReducers({

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import browserHistory from '../Utils/BrowserHistory';
 import './Miscellaneousindex.css';
 import BrowserHistory from '../Utils/BrowserHistory';
+
 class Miscellaneousindex extends Component {
 
   onHandleClicksone = (e) => {
@@ -19,11 +20,7 @@ class Miscellaneousindex extends Component {
           <button onClick={this.onHandleClickstwo} className="lapbtn" type="submit" >Inventory_Laptop</button>
           <h1 className="inven">INVENTORY-LIST</h1>
         </div>
-     
-        
-        
       </div>
-
     );
   }
 }

@@ -7,7 +7,6 @@ import './TableRowlap.css';
 import { updateHandle } from '../../Action/LaptopAction'
 import BrowserHistory from '../Utils/BrowserHistory';
 
-
 class TableRowlap extends Component {
   constructor(props) {
     super(props);
@@ -18,14 +17,13 @@ class TableRowlap extends Component {
       Asset_Number: '',
       Name: '',
       MAC_Address: '',
-      ChargerAsset_Number:'',
+      ChargerAsset_Number: '',
       Comment: '',
-      _id:'',
-
+      _id: '',
     };
     this.delete = this.delete.bind(this);
-
   }
+
   handleChangeg = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   }
@@ -54,12 +52,12 @@ class TableRowlap extends Component {
       MAC_Address: e.target.value
     })
   }
+
   onChangeChargerAsset_Number = (e) => {
     this.setState({
       ChargerAsset_Number: e.target.value
     })
   }
-
 
   onChangeComment = (e) => {
     this.setState({
@@ -73,6 +71,7 @@ class TableRowlap extends Component {
       .catch(err => console.log(err))
     window.location.reload();
   }
+
   openModal = () => {
     console.log(this.props.obj._id)
     this.setState({ Employee_Id: this.props.obj.Employee_Id })
@@ -82,7 +81,6 @@ class TableRowlap extends Component {
     this.setState({ ChargerAsset_Number: this.props.obj.ChargerAsset_Number })
     this.setState({ Comment: this.props.obj.Comment })
     this.setState({ _id: this.props.obj._id })
-
     this.setState({ modalIsOpen: true });
     console.log("hi", this.state)
   }
@@ -90,7 +88,6 @@ class TableRowlap extends Component {
   closeModal = () => {
     this.setState({ modalIsOpen: false });
   }
-
 
   componentDidMount() {
     const LoginDetails = (localStorage.getItem('LOGINDETAILS'));
@@ -104,7 +101,7 @@ class TableRowlap extends Component {
 
   onSubmit = (e) => {
     e.preventDefault();
-    console.log("hi",this.state._id)
+    console.log("hi", this.state._id)
     const payload = {
       _id: this.state._id,
       Employee_Id: this.state.Employee_Id,
@@ -114,17 +111,17 @@ class TableRowlap extends Component {
       ChargerAsset_Number: this.state.ChargerAsset_Number,
       Comment: this.state.Comment,
     };
-console.log(payload);
+    console.log(payload);
     this.props.updateHandle(payload);
     BrowserHistory.push('./laptopform');
   }
+
   onHandleClicksCancel() {
     BrowserHistory.push('/laptopform');
   }
 
   render() {
     const { UserDetails } = this.props;
-
     return (
       <tr>
         <td>
@@ -208,7 +205,6 @@ console.log(payload);
                 <button onClick={this.onHandleClicksCancel} type="button" className="lapresetbta">Cancel</button>
               </div>
             </form>
-
           </Modal>
         </td>
         <td>

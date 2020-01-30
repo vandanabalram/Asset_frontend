@@ -18,39 +18,47 @@ class LaptopTable extends Component {
       Comment: ''
     }
   }
+
   handleChangeg = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   }
+
   onChangeEmployee_Id = (e) => {
     this.setState({
       Employee_Id: e.target.value
     });
   }
+
   onChangeAsset_Number = (e) => {
     this.setState({
       Asset_Number: e.target.value
     })
   }
+
   onChangeName = (e) => {
     this.setState({
       Name: e.target.value
     })
   }
+
   onChangeMAC_Address = (e) => {
     this.setState({
       MAC_Address: e.target.value
     })
   }
+
   onChangeChargerAsset_Number = (e) => {
     this.setState({
       ChargerAsset_Number: e.target.value
     })
   }
+
   onChangeComment = (e) => {
     this.setState({
       Comment: e.target.value
     })
   }
+
   onSubmit = (e) => {
     e.preventDefault();
     const payload = {
@@ -142,7 +150,6 @@ const mapStateToProps = (state) => {
   const { MAC_Address } = state.Laptopreducer
   const { ChargerAsset_Number } = state.Laptopreducer
   const { Comment } = state.Laptopreducer
-
   return { Employee_Id, Asset_Number, Name, MAC_Address, ChargerAsset_Number, Comment }
 }
 export default connect(mapStateToProps, { questionHandle })(LaptopTable);

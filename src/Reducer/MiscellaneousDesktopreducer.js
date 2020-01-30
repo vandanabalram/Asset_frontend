@@ -5,7 +5,7 @@ const initialState = {
   Mouse: '',
   Keyboard: '',
   Cables: '',
-  Comment:'',
+  Comment: '',
 }
 export default (state = initialState, action) => {
   switch (action.type) {
@@ -19,9 +19,6 @@ export default (state = initialState, action) => {
         Keyboard: action.payload.Keyboard,
         Cables: action.payload.Cables,
         Comment: action.payload.Comment,
-
-
-
       }
     }
     default:

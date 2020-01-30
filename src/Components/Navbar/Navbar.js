@@ -5,14 +5,16 @@ import RegisterPage from '../RegisterPage/RegisterPage'
 import LoginPage from '../LoginPage/LoginPage';
 import '../Utils/BrowserHistory';
 import BrowerHistory from '../Utils/BrowserHistory';
-class Navbar extends Component {
 
+class Navbar extends Component {
   onHandleClick() {
     BrowerHistory.push('/register');
   }
+
   onHandleClicks() {
     BrowerHistory.push('/login');
   }
+
   render() {
     return (
       <div>
@@ -22,7 +24,6 @@ class Navbar extends Component {
           </div>
           <div className="col-xs-7 col-sm-7 col-md-7 col-lg-7" >
           </div>
-
           <div className="col-xs-1 col-sm-1 col-md-2 col-lg-1" >
             <button className="regbtn" onClick={this.onHandleClick}> Register</button>
           </div>
@@ -30,7 +31,6 @@ class Navbar extends Component {
             <button className="regbtn" onClick={this.onHandleClicks}> Signin</button>
           </div>
         </div>
-
       </div>
     );
   }

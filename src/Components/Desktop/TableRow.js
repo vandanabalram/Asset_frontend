@@ -8,7 +8,6 @@ import './TableRow.css';
 import { updateHandle } from '../../Action/DesktopAction'
 import BrowserHistory from '../Utils/BrowserHistory';
 
-
 class TableRow extends Component {
   constructor(props) {
     super(props);
@@ -20,7 +19,7 @@ class TableRow extends Component {
       Name: '',
       MAC_Address: '',
       Comment: '',
-      _id:'',
+      _id: '',
 
     };
     this.delete = this.delete.bind(this);
@@ -75,7 +74,6 @@ class TableRow extends Component {
     this.setState({ MAC_Address: this.props.obj.MAC_Address })
     this.setState({ Comment: this.props.obj.Comment })
     this.setState({ _id: this.props.obj._id })
-
     this.setState({ modalIsOpen: true });
     console.log("hi", this.state)
   }
@@ -83,7 +81,6 @@ class TableRow extends Component {
   closeModal = () => {
     this.setState({ modalIsOpen: false });
   }
-
 
   componentDidMount() {
     const LoginDetails = (localStorage.getItem('LOGINDETAILS'));
@@ -97,7 +94,7 @@ class TableRow extends Component {
 
   onSubmit = (e) => {
     e.preventDefault();
-    console.log("hi",this.state._id)
+    console.log("hi", this.state._id)
     const payload = {
       _id: this.state._id,
       Employee_Id: this.state.Employee_Id,
@@ -106,10 +103,11 @@ class TableRow extends Component {
       MAC_Address: this.state.MAC_Address,
       Comment: this.state.Comment,
     };
-console.log(payload);
+    console.log(payload);
     this.props.updateHandle(payload);
     BrowserHistory.push('./desktopform');
   }
+
   onHandleClicksCancel() {
     BrowserHistory.push('/desktopform');
   }
@@ -190,7 +188,7 @@ console.log(payload);
             </form>
 
           </Modal>
-          
+
         </td>
         <td>
           {UserDetails.IsAdmin ? <button onClick={this.delete} className="btn btn-danger">Delete</button> : ""}
@@ -199,7 +197,7 @@ console.log(payload);
 
     );
   }
-  
+
 }
 
 const mapStateToProps = (state) => {

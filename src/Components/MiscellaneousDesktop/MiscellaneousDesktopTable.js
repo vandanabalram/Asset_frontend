@@ -6,7 +6,6 @@ import { questionHandle } from '../../Action/MiscellaneousDesktopAction'
 import { connect } from 'react-redux';
 import './MiscellaneousDesktopTable.css';
 
-
 class MiscellaneousDesktopTable extends Component {
   constructor(props) {
     super(props);
@@ -17,9 +16,10 @@ class MiscellaneousDesktopTable extends Component {
       Mouse: false,
       Keyboard: false,
       Cables: false,
-      Comment:'',
+      Comment: '',
     }
   }
+
   handleChangeg = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   }
@@ -29,32 +29,37 @@ class MiscellaneousDesktopTable extends Component {
       Asset_Number: e.target.value
     })
   }
+
   onChangeDesktop = (e) => {
     this.setState({
       Desktop: e.target.value
     })
   }
+
   onChangeMAC_Address = (e) => {
     this.setState({
       MAC_Address: e.target.value
     })
   }
-  
+
   toggleClickMouse = (e) => {
-    console.log("hi",this.state.Mouse)
-      this.setState({ Mouse: !this.state.Mouse })
+    console.log("hi", this.state.Mouse)
+    this.setState({ Mouse: !this.state.Mouse })
     console.log(this.state.Mouse)
   }
+
   toggleClickKeyboard = (e) => {
     this.setState({
       Keyboard: !this.state.Keyboard
     })
   }
+
   toggleClickCables = (e) => {
     this.setState({
       Cables: !this.state.Cables
     })
   }
+
   Comment = (e) => {
     this.setState({
       Comment: e.target.value
@@ -70,9 +75,9 @@ class MiscellaneousDesktopTable extends Component {
       Mouse: this.state.Mouse,
       Keyboard: this.state.Keyboard,
       Cables: this.state.Cables,
-      Comment:this.state.Comment
-
+      Comment: this.state.Comment
     };
+
     this.props.questionHandle(payload);
     BrowserHistory.push('./miscellaneousdesktopform');
   }
@@ -81,10 +86,9 @@ class MiscellaneousDesktopTable extends Component {
   }
 
   render() {
-    const { Asset_Number, Desktop, MAC_Address,Comment } = this.state
+    const { Asset_Number, Desktop, MAC_Address, Comment } = this.state
     return (
       <div >
-
         <div className="misdesktopimg" style={{ marginTop: 10 }}>
           <form onSubmit={this.onSubmit} className="misdeskform">
             <div>
@@ -112,45 +116,44 @@ class MiscellaneousDesktopTable extends Component {
               />
             </div>
             <div>
-            <label className="name ">Accessories: </label>
-            <div className="box">
-            <div className="form-check ">
-              <label className="form-check-label ">
-                <input type="checkbox"
-                  onChange={this.toggleClickMouse}
-                  className="form-check-input"
-                />
-                Mouse
+              <label className="name ">Accessories: </label>
+              <div className="box">
+                <div className="form-check ">
+                  <label className="form-check-label ">
+                    <input type="checkbox"
+                      onChange={this.toggleClickMouse}
+                      className="form-check-input"
+                    />
+                    Mouse
             </label>
-            </div >
-          
-            <div className="form-check ">
-              <label className="form-check-label">
-                <input type="checkbox"
-                  onChange={this.toggleClickKeyboard}
-                  className="form-check-input"
-                />
-                Keyboard
+                </div >
+
+                <div className="form-check ">
+                  <label className="form-check-label">
+                    <input type="checkbox"
+                      onChange={this.toggleClickKeyboard}
+                      className="form-check-input"
+                    />
+                    Keyboard
             </label>
-            </div>
-            <div className="form-check ">
-              <label className="form-check-label ">
-                <input type="checkbox"
-                  onChange={this.toggleClickCables}
-                  className="form-check-input"
-                />
-                Cables
+                </div>
+                <div className="form-check ">
+                  <label className="form-check-label ">
+                    <input type="checkbox"
+                      onChange={this.toggleClickCables}
+                      className="form-check-input"
+                    />
+                    Cables
             </label>
-            </div>
-            </div>
-            <div>
-              <label className="name">Comment:</label>
-              <input type="text"
-                className="misdeswidth4"
-                // value={this.state.Comment}
-                onChange={this.Comment}
-              />
-            </div>
+                </div>
+              </div>
+              <div>
+                <label className="name">Comment:</label>
+                <input type="text"
+                  className="misdeswidth4"
+                  onChange={this.Comment}
+                />
+              </div>
             </div>
             <div className="form-group">
               <button type="submit" value="send" className="misdessendbta" onClick={this.onSubmit}>Send</button>
@@ -171,8 +174,6 @@ const mapStateToProps = (state) => {
   const { Keyboard } = state.MisLapreducer
   const { Cables } = state.MisLapreducer
   const { Comment } = state.MisLapreducer
-
-
-  return { Asset_Number, Desktop, MAC_Address, Mouse, Keyboard, Cables,Comment }
+  return { Asset_Number, Desktop, MAC_Address, Mouse, Keyboard, Cables, Comment }
 }
 export default connect(mapStateToProps, { questionHandle })(MiscellaneousDesktopTable);

@@ -6,10 +6,8 @@ class Footer extends Component {
     return (
       <div  >
         <footer class="page-footer font-small blue footer" >
-
-          <div  id="one" class="footer-copyright text-center py-3"> <b>© 2020 Copyright:</b>
-
-    <a id="two" className="ref" href="https://mdbootstrap.com/education/bootstrap/"> AtharvaTechnologies.com</a>
+          <div id="one" class="footer-copyright text-center py-3"> <b>© 2020 Copyright:</b>
+            <a id="two" className="ref" href="https://mdbootstrap.com/education/bootstrap/"> AtharvaTechnologies.com</a>
             <div className="right">
               <span><a href="#"><SocialIcon url="http://facebook.com/jaketrent" /></a></span>
               <span><a class="icon" href="#"><SocialIcon url="http://instagram.com/jaketrent" /></a></span>

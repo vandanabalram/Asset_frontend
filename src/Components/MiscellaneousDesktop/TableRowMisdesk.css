@@ -1,45 +1,39 @@
 .modelbodymisdes{
-    width:600px;
-    border:1px solid black;
-    margin-left: 325px;
-    margin-top: 100px;
-    background-color:#E0EAFC;
-  }
+  width:600px;
+  border:1px solid black;
+  margin-left: 325px;
+  margin-top: 100px;
+  background-color:#E0EAFC;
+}
 .tablerowmisdes{
   margin-top: 50px;
   margin-left: 50px;
 }
-
 .rmdwidth1{
   width: 232px;
   height: 25px;
   border: cornsilk;
   margin-left: 21px;
-
- }
- .rmdwidth2{
+}
+.rmdwidth2{
   width: 232px;
   height:25px;
   border: cornsilk;
   margin-left:68px;
-
- }
- .rmdwidth3{
+}
+.rmdwidth3{
   width: 232px;
   height: 25px;
   border: cornsilk;
   margin-left: 28px;
-
- }
- .rmd1width4{
+}
+.rmd1width4{
   width: 232px;
   height:25px;
   border: cornsilk;
   margin-left: 64px;
-
- }
- 
- .rmdsendbta{
+}
+.rmdsendbta{
   background-color: lightseagreen;
   color:blue;
   border-radius: 50px;
@@ -48,14 +42,11 @@
   border: 2px solid white;
   margin-top: 25px;
   margin-left: 89px;
-
 }
 .rmdsendbta:hover{
   background-color: darkslategray;
   color: white;
 }
-
-
 .rmdresetbta{
   background-color: lightseagreen;
   color:blue;
@@ -70,9 +61,8 @@
   background-color: darkslategray;
   color: white;
 }
- 
 .box1{
-    margin-left: 150px ;
-    margin-top: -30px;
-  }
+  margin-left: 150px ;
+  margin-top: -30px;
+}
  

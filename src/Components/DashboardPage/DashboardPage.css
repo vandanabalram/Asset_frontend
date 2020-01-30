@@ -1,19 +1,43 @@
 .author{
-    font-size: x-small;
-    margin-left: 10px;
+  font-size: x-small;
+  margin-left: 10px;
 }
-
 .backgrnd{
-    width:1315px;
-    height:420px;
+  width:1315px;
+  height:420px;
 }
-
-.welcome {
-    
-        position: absolute;
-        bottom:300px;
-        padding-left: 209px;
-        font-size: 45px;
-        color:brown;
-        
+.welcome { 
+  position: absolute;
+  bottom:300px;
+  padding-left: 209px;
+  font-size: 45px;
 }
+p{
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 3em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+  
+@keyframes animate {
+  0%{
+    background-position: -500%;
+  }
+  100%{
+    background-position: 500%;
+  }
+  100%{
+    background-color: #001F3F;
+    }
+  50%{
+    background-color: slategrey;
+    }
+  }

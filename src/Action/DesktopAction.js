@@ -1,6 +1,6 @@
 import axios from 'axios'
-export function questionHandle(payload) {
 
+export function questionHandle(payload) {
   const options = {
     url: 'http://localhost:3001/Desktop',
     method: 'POST',
